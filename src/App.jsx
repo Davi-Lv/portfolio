@@ -1,12 +1,5 @@
 import './App.css'
-
-const nomeDoProjeto = ["Calculadora com Java e React.js", "Sei lá"]
-
-const ListaNomeDoProjeto = nomeDoProjeto.map(
-  (n, i) => {
-    <p key={i}>{n}</p>
-  }
-)
+import Projetos from './components/projetos'
 
 export default function App() {
   return (
@@ -25,9 +18,9 @@ export default function App() {
           </button>
         </div>
 
-        <div className='botaoContatos'>
+        <button className='botaoContatos'>
           Meus contatos
-        </div>
+        </button>
       </header>
 
       <div className='QuemSou'>
@@ -35,7 +28,7 @@ export default function App() {
           <h1 className='olaeusou'>Olá, eu sou</h1>
           <h1 className='davimordonho'>Davi Mordonho</h1>
           <p className='paragrafoQuemSou'>Estudante de analise e desenvolvimento de sistemas no Instituto Federal de Pernambuco</p>
-          <button className="saberMais"><span>Contatos</span></button>
+          <button className="saberMais"><span>sobre mim</span></button>
         </div>
 
         <div className='imgQuemSou'>
@@ -96,16 +89,59 @@ export default function App() {
 
       <div className="meusProjetos">
         <h1>Meus Projetos</h1>
-
-        <div className="BlocoProjeto">
-          <div className="picture">
-            <img src="../src/assets/exemploImagemProjeto.png" alt="Imagem do Projeto" />
-          </div>
-          <p>{ListaNomeDoProjeto[1]}</p>
+        <div className="projetos">
+          <Projetos nomeDoProjeto="teste 1" picture="../src/assets/exemploImagemProjeto.png" />
+          <Projetos nomeDoProjeto="teste 2" picture="../src/assets/exemploImagemProjeto.png" />
+          <Projetos nomeDoProjeto="teste 3" picture="../src/assets/exemploImagemProjeto.png" />
+          <Projetos nomeDoProjeto="teste 4" picture="../src/assets/exemploImagemProjeto.png" />
         </div>
+        <button>Ver todos os projetos</button>
       </div>
 
-    </body >
+      <div className="linha2" />
+
+      <div className="contatos">
+        <p>Interessado em entrar em contato ?</p>
+      </div>
+
+      <div className="redes wrapper">
+
+        <div class="icon linkedin">
+          <span class="tooltip">Instagram</span>
+          <img src="./src/assets/linkedin.svg" alt="linkedin" />
+        </div>
+
+        <div class="icon Instagram">
+          <span class="tooltip">Instagram</span>
+          <img src="./src/assets/instagram.svg" alt="instagram" />
+        </div>
+
+        <div class="icon Whatsapp">
+          <span class="tooltip">Whatsapp</span>
+          <img src="./src/assets/whatsapp.svg" alt="whatsapp" />
+        </div>
+
+        <div class="icon Email">
+          <span class="tooltip">Email</span>
+          <img src="./src/assets/email.svg" alt="email" />
+        </div>
+
+        <div class="icon GitHub">
+          <span class="tooltip">GitHub</span>
+          <img src="./src/assets/github.svg" alt="github" />
+        </div>
+
+      </div>
+
+      <div className="linha3" />
+
+      <div className="footer">
+        <p className='portfolio'>Portifolio desenvolvido por</p>
+        <p className='nome'>@Davii_Lv</p>
+        <img src="./src/assets/reactIcon.svg" alt="reactIcon" />
+      </div>
+
+    </body>
   )
 }
 

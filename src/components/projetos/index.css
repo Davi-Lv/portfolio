@@ -1,0 +1,25 @@
+.BlocoProjeto p {
+    padding: 6px 4px 0px 4px;
+    margin: 0;    
+    transition: ease 0.3s;
+    width: 245px;
+    height: 48px;
+    left: 448px;
+    top: 1428px;
+    cursor: default;
+}
+
+.BlocoProjeto img:hover {
+    opacity: 0.2;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+.picture:hover {
+    background: #FFAA21;
+    border-radius: 15px;
+    transition: ease 0.3s;
+}
+
+.picture:active {
+    background-color: #F0F0F1;
+   }
