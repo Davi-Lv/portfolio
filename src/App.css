@@ -1,3 +1,9 @@
+:root {
+  font-family: 'Source Sans Pro', sans-serif!important;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Source Sans Pro';

@@ -1,5 +1,21 @@
 import './App.css'
 import Projetos from './components/projetos'
+import ImgProjetoQuemSou from "../src/assets/Group 1.png";
+import Html5 from '../src/assets/html5.svg'
+import CSS3 from '../src/assets/css3.svg'
+import Java from "../src/assets/java.svg";
+import JavaScript from "../src/assets/javascript.svg";
+import ReacteReactNative from "../src/assets/react.svg";
+import GiteGitHub from "../src/assets/gitEGithub.svg";
+import Figma from "../src/assets/figma.svg";
+import Photoshop from "../src/assets/photoshop.svg";
+import Ilustrator from "../src/assets/ilustrator.svg";
+import linkedin from "../src/assets/linkedin.svg";
+import instagram from "../src/assets/instagram.svg";
+import whatsapp from "../src/assets/whatsapp.svg";
+import email from "../src/assets/email.svg";
+import github from "../src/assets/github.svg";
+import reactIcon from "../src/assets/reactIcon.svg";
 
 export default function App() {
   return (
@@ -32,7 +48,7 @@ export default function App() {
         </div>
 
         <div className='imgQuemSou'>
-          <img src="../src/assets/Group 1.png" alt="imagens: exemplos de projetos" />
+          <img src={ImgProjetoQuemSou} alt="imagens: exemplos de projetos" />
         </div>
       </div>
 
@@ -41,30 +57,30 @@ export default function App() {
         <h1>Habilidade</h1>
         <div className="bloco1">
           <div className='iconAndName'>
-            <img src="../src/assets/html5.svg" alt="HTML 5" />
+            <img src={Html5} alt="HTML 5" />
             <p>HTML 5</p>
           </div>
           <div className='iconAndName'>
-            <img src="../src/assets/css3.svg" alt="CSS 3" />
+            <img src={CSS3} alt="CSS 3" />
             <p>CSS 3</p>
           </div>
           <div className='iconAndName'>
-            <img src="../src/assets/java.svg" alt="Java" />
+            <img src={Java} alt="Java" />
             <p>Java</p>
           </div>
         </div>
         <div className="bloco2">
           <div className='iconAndName'>
-            <img src="../src/assets/javascript.svg" alt="JavaScript" />
+            <img src={JavaScript} alt="JavaScript" />
             <p>JavaScript</p>
             <p></p>
           </div>
           <div className='iconAndName'>
-            <img src="../src/assets/react.svg" alt="React e React Native" />
+            <img src={ReacteReactNative} alt="React e React Native" />
             <p>React.Js</p>
           </div>
           <div className='iconAndName'>
-            <img src="../src/assets/gitEGithub.svg" alt="Git e GitHub" />
+            <img src={GiteGitHub} alt="Git e GitHub" />
             <p>Git e GitHub</p>
           </div>
         </div>
@@ -73,15 +89,15 @@ export default function App() {
 
         <div className="bloco3">
           <div className='iconAndName'>
-            <img src="../src/assets/figma.svg" alt="Figma" />
+            <img src={Figma} alt="Figma" />
             <p>Figma</p>
           </div>
           <div className='iconAndName'>
-            <img src="../src/assets/photoshop.svg" alt="Photoshop" />
+            <img src={Photoshop} alt="Photoshop" />
             <p>Photoshop</p>
           </div>
           <div className='iconAndName'>
-            <img src="../src/assets/ilustrator.svg" alt="Ilustrator" />
+            <img src={Ilustrator} alt="Ilustrator" />
             <p>Ilustrator</p>
           </div>
         </div >
@@ -90,10 +106,10 @@ export default function App() {
       <div className="meusProjetos">
         <h1>Meus Projetos</h1>
         <div className="projetos">
-          <Projetos nomeDoProjeto="teste 1" picture="../src/assets/exemploImagemProjeto.png" />
-          <Projetos nomeDoProjeto="teste 2" picture="../src/assets/exemploImagemProjeto.png" />
-          <Projetos nomeDoProjeto="teste 3" picture="../src/assets/exemploImagemProjeto.png" />
-          <Projetos nomeDoProjeto="teste 4" picture="../src/assets/exemploImagemProjeto.png" />
+          <Projetos nomeDoProjeto="teste 1" />
+          <Projetos nomeDoProjeto="teste 2" />
+          <Projetos nomeDoProjeto="teste 3" />
+          <Projetos nomeDoProjeto="teste 4" />
         </div>
         <button>Ver todos os projetos</button>
       </div>
@@ -108,27 +124,27 @@ export default function App() {
 
         <div class="icon linkedin">
           <span class="tooltip">Instagram</span>
-          <img src="./src/assets/linkedin.svg" alt="linkedin" />
+          <img src={linkedin} alt="linkedin" />
         </div>
 
         <div class="icon Instagram">
           <span class="tooltip">Instagram</span>
-          <img src="./src/assets/instagram.svg" alt="instagram" />
+          <img src={instagram} alt="instagram" />
         </div>
 
         <div class="icon Whatsapp">
           <span class="tooltip">Whatsapp</span>
-          <img src="./src/assets/whatsapp.svg" alt="whatsapp" />
+          <img src={whatsapp} alt="whatsapp" />
         </div>
 
         <div class="icon Email">
           <span class="tooltip">Email</span>
-          <img src="./src/assets/email.svg" alt="email" />
+          <img src={email} alt="email" />
         </div>
 
         <div class="icon GitHub">
           <span class="tooltip">GitHub</span>
-          <img src="./src/assets/github.svg" alt="github" />
+          <img src={github} alt="github" />
         </div>
 
       </div>
@@ -138,7 +154,7 @@ export default function App() {
       <div className="footer">
         <p className='portfolio'>Portifolio desenvolvido por</p>
         <p className='nome'>@Davii_Lv</p>
-        <img src="./src/assets/reactIcon.svg" alt="reactIcon" />
+        <img src={reactIcon} alt="reactIcon" />
       </div>
 
     </body>
