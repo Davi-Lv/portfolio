@@ -117,7 +117,7 @@ export default function App() {
       <div className="linha2" />
 
       <div className="contatos">
-        <p>Interessado em entrar em contato ?</p>
+        <p>Contatos</p>
       </div>
 
       <div className="redes wrapper">
