@@ -123,7 +123,7 @@ export default function App() {
       <div className="redes wrapper">
 
         <div class="icon linkedin">
-          <span class="tooltip">Instagram</span>
+          <span class="tooltip">linkedin</span>
           <img src={linkedin} alt="linkedin" />
         </div>
 
