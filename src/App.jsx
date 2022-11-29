@@ -100,13 +100,11 @@ export default function App() {
       </div>
 
       <div className="linha2" />
-
       <div name="Contatos" className="contatos">
         <p>Interessado em entrar em contato ?</p>
       </div>
 
       <div className="redes wrapper">
-
         <div class="icon linkedin">
           <span class="tooltip">linkedin</span>
           <img src={linkedin} alt="linkedin" />
