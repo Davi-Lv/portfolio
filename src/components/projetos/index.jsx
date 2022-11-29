@@ -1,8 +1,6 @@
 import './index.css'
 import ImgProjeto from './../../assets/exemploImagemProjeto.png'
 
-//Calculadora com Java e React.js
-
 export default function Projetos({ nomeDoProjeto }) {
     return (
         <>

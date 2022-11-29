@@ -15,29 +15,14 @@ import instagram from "../src/assets/instagram.svg";
 import whatsapp from "../src/assets/whatsapp.svg";
 import email from "../src/assets/email.svg";
 import github from "../src/assets/github.svg";
-import reactIcon from "../src/assets/reactIcon.svg";
+import NavBar from './layout/NavBar';
+import Footer from './layout/Footer'
 
 export default function App() {
   return (
     <body className="App">
 
-      <header className='menu'>
-        <div className="nav">
-          <button className='buttomNav botaoMenu'>
-            Sobre min
-          </button>
-          <button className='buttomNav botaoMenu'>
-            GitHub
-          </button>
-          <button className='buttomNav botaoMenu'>
-            Meus projetos
-          </button>
-        </div>
-
-        <button className='botaoContatos'>
-          Meus contatos
-        </button>
-      </header>
+      <NavBar />
 
       <div className='QuemSou'>
         <div>
@@ -104,7 +89,7 @@ export default function App() {
       </div >
 
       <div className="meusProjetos">
-        <h1>Meus Projetos</h1>
+        <h1 name="projetos">Meus Projetos</h1>
         <div className="projetos">
           <Projetos nomeDoProjeto="teste 1" />
           <Projetos nomeDoProjeto="teste 2" />
@@ -116,14 +101,14 @@ export default function App() {
 
       <div className="linha2" />
 
-      <div className="contatos">
+      <div name="Contatos" className="contatos">
         <p>Interessado em entrar em contato ?</p>
       </div>
 
       <div className="redes wrapper">
 
         <div class="icon linkedin">
-          <span class="tooltip">Instagram</span>
+          <span class="tooltip">linkedin</span>
           <img src={linkedin} alt="linkedin" />
         </div>
 
@@ -151,12 +136,7 @@ export default function App() {
 
       <div className="linha3" />
 
-      <div className="footer">
-        <p className='portfolio'>Portifolio desenvolvido por</p>
-        <p className='nome'>@Davii_Lv</p>
-        <img src={reactIcon} alt="reactIcon" />
-      </div>
-
+      <Footer />
     </body>
   )
 }
