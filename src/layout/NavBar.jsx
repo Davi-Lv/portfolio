@@ -1,29 +1,30 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from 'react-router-dom'
 
 export default function NavBar() {
     return (
         <header className='menu'>
-            <div className="nav">
-                <button className='buttomNav botaoMenu'>
-                    Sobre min
-                </button>
-                <button className='buttomNav botaoMenu'>
-                    GitHub
-                </button>
-                <Link ignoreCancelEvents spy={true} offset={-20} duration={1000} to="projetos" smooth={true}>
-                    <button className='buttomNav botaoMenu'>
-                        Meus projetos
-                    </button>
-                </Link>
-            </div>
+        <div className="nav">
+          <Link to="/">
+            <button className='buttomNav botaoMenu'>
+              Inicio
+            </button>
+          </Link>
+          <button className='buttomNav botaoMenu'>
+            GitHub
+          </button>
 
-            <a href="#Contatos">
-                <Link ignoreCancelEvents spy={true} offset={-45} duration={1000} to="Contatos" smooth={true}>
-                    <button href="#Contatos" className='botaoContatos'>
-                        Meus contatos
-                    </button>
-                </Link>
-            </a>
-        </header>
+          <Link to="/MeusProjetos">
+            <button className='buttomNav botaoMenu'>
+              Meus projetos
+            </button>
+          </Link>
+
+        </div>
+
+        <button href="#Contatos" className='botaoContatos'>
+          Meus contatos
+        </button>
+
+      </header>
     )
 }

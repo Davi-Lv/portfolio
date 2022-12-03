@@ -1,0 +1,142 @@
+:root {
+  font-family: 'Source Sans Pro', sans-serif!important;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro';
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+.menu {  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+
+  max-width: 1171px; 
+  margin: 0 auto;
+}
+.nav {
+  display: flex; 
+}
+.buttomNav {
+  margin-right: 35px;
+  padding: 15px 27px 15px 27px;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+.botaoMenu {  
+  font-size: 16px;
+  color: #636363;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+.botaoMenu:focus,
+.botaoMenu:hover {
+  color: #2F2F2F;
+}
+.botaoMenu:hover:after {
+  width: 100%;
+  left: 0%;
+}
+.botaoMenu:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #FBA720;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+ .botaoContatos {
+  border: none;
+
+  background: #2F2F2F;
+  color: #FFAA21;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  padding: 13px 25px;
+  border-radius: 15px;
+
+  cursor: pointer;
+  transition: all 0.35s;
+}
+.botaoContatos:hover {
+  background: #FBA720;
+  color: #2F2F2F;
+}
+.botaoContatos:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+ }
+ .bloco2, .bloco3 {
+  padding-bottom: 30px;
+ }
+ .bloco3 {
+  padding-top: 50px;
+ }
+ .picture img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  border-radius: 15px;
+ }
+ .picture {
+  width: 253px;
+  height: 225px;
+  left: 447px;
+ }
+
+ .BlocoProjeto {
+  width: 253px;
+  height: 279px;
+  left: 447px;
+ }
+ .footer {
+  display: flex;
+  justify-content: center;
+
+  line-height: 18px;
+  font-size: 14px;
+  font-style: normal;
+
+  background: #FBA720;
+ }
+ .footer img {
+  padding-left: 8px;
+ }
+ .portfolio {
+  padding-right: 3px;
+  font-weight: 400;
+ }
+ .nome{
+  font-weight: 700;
+ }
+
+
+
+

@@ -1,4 +1,4 @@
-import './index.css'
+import './Styles.css'
 import ImgProjeto from './../../assets/exemploImagemProjeto.png'
 
 export default function Projetos({ nomeDoProjeto }) {

@@ -1,4 +1,5 @@
-import reactIcon from "../../src/assets/reactIcon.svg";
+import './Styles.css'
+import reactIcon from "../../assets/reactIcon.svg";
 
 export default function Footer() {
     return (
@@ -6,7 +7,6 @@ export default function Footer() {
             <p className='portfolio'>Portifolio desenvolvido por</p>
             <p className='nome'>@Davii_Lv</p>
             <img src={reactIcon} alt="reactIcon" />
-        </div>
-        
+        </div>        
     )
 }

@@ -7,6 +7,7 @@
     left: 448px;
     top: 1428px;
     cursor: default;
+    cursor: pointer;
 }
 
 .BlocoProjeto img:hover {
@@ -14,6 +15,7 @@
     transition: ease 0.3s;
     cursor: pointer;
 }
+
 .picture:hover {
     background: #FFAA21;
     border-radius: 15px;
@@ -23,3 +25,11 @@
 .picture:active {
     background-color: #F0F0F1;
    }
+
+.BlocoProjeto p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
