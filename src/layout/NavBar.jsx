@@ -1,3 +1,4 @@
+import "../styles/NavBar.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function NavBar() {
@@ -5,14 +6,14 @@ export default function NavBar() {
         <header className='menu'>
             <div className="nav">
                 <button className='buttomNav botaoMenu'>
-                    Sobre min
+                    Linkedin
                 </button>
                 <button className='buttomNav botaoMenu'>
                     GitHub
                 </button>
                 <Link ignoreCancelEvents spy={true} offset={-20} duration={1000} to="projetos" smooth={true}>
                     <button className='buttomNav botaoMenu'>
-                        Meus projetos
+                        Alguns Projetos
                     </button>
                 </Link>
             </div>
@@ -20,7 +21,7 @@ export default function NavBar() {
             <a href="#Contatos">
                 <Link ignoreCancelEvents spy={true} offset={-45} duration={1000} to="Contatos" smooth={true}>
                     <button href="#Contatos" className='botaoContatos'>
-                        Meus contatos
+                        Contatos
                     </button>
                 </Link>
             </a>

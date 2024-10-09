@@ -1,0 +1,148 @@
+{
+    "availability": [
+        "Disponível para trabalho"
+    ],
+    "personal_info": {
+        "name": "Davi Mordonho",
+        "education": "Graduado em analise e desenvolvimento de sistemas no Instituto Federal de Pernambuco",
+        "about_me": "Olá, seja bem vindo!! Sou um apaixonado por tecnologia e como ela pode melhorar a vida das pessoas. Estou sempre em busca de aprimorar minhas habilidades, aprender novas ferramentas e dedicar meus esforços a projetos que realmente fazem a diferença. Estou sempre aprendendo e aberto a novos desafios fontes de crescimento pessoal e profissional."
+    },
+    "projects": [
+        {
+            "title": "Projeto 1",
+            "description": "Descrição do projeto 1",
+            "link": "google.com"
+        },
+        {
+            "title": "Projeto 2",
+            "description": "Descrição do projeto 2",
+            "link": "google.com"
+        },
+        {
+            "title": "Projeto 3",
+            "description": "Descrição do projeto 3",
+            "link": "google.com"
+        },
+        {
+            "title": "Projeto 4",
+            "description": "Descrição do projeto 4",
+            "link": "google.com"
+        }
+    ],
+    "recommendations": {
+        "biblioteca": [
+            {
+                "id": 1,
+                "image": "link da imagem",
+                "title": "The Dip",
+                "description": "Um livrinho que ensina quando desistir (e quando persistir).",
+                "rating": "4.5",
+                "pages": "80",
+                "link": "Ver na amazon"
+            },
+            {
+                "id": 2,
+                "image": "link da imagem",
+                "title": "O mesmo de sempre",
+                "description": "Ao invés de tentar prever o que virá, é mais eficaz olhar para o \"que não muda nunca\".",
+                "rating": "4.7",
+                "pages": "232",
+                "link": "Ver na amazon"
+            },
+            {
+                "id": 3,
+                "image": "link da imagem",
+                "title": "Hábitos Atômicos",
+                "description": "Um método fácil e comprovado de criar bons hábitos e se livrar dos maus.",
+                "rating": "4.8",
+                "pages": "320",
+                "link": "Ver na amazon"
+            }
+        ],
+        "para_desenvolvedor": [
+            {
+                "id": 4,
+                "image": "link da imagem",
+                "title": "Clean Code",
+                "description": "Um guia para escrever código limpo e sustentável.",
+                "rating": "4.7",
+                "pages": "464",
+                "link": "Ver na amazon"
+            },
+            {
+                "id": 5,
+                "image": "link da imagem",
+                "title": "O Design Patterns: Elementos de Reutilização de Software",
+                "description": "Um clássico sobre padrões de projeto.",
+                "rating": "4.6",
+                "pages": "395",
+                "link": "Ver na amazon"
+            }
+        ],
+        "dicas_de_presentes": [
+            {
+                "id": 6,
+                "image": "link da imagem",
+                "title": "Echo Dot (4ª Geração)",
+                "description": "Smart Speaker com Alexa - Cor Preta",
+                "rating": "4.7",
+                "link": "Ver na amazon"
+            },
+            {
+                "id": 7,
+                "image": "link da imagem",
+                "title": "Kindle Paperwhite",
+                "description": "Amazon - Cor Preta",
+                "rating": "4.6",
+                "link": "Ver na amazon"
+            }
+        ]
+    },
+    "academic_history": [
+        {
+            "degree": "Ensino Superior - Análise e Desenvolvimento de Sistemas",
+            "institution": "Instituto Federal de Pernambuco - Campus Jaboatão",
+            "years": "2021-2024"
+        }
+    ],
+    "certificates": [
+        {
+            "course_name": "Nome do curso",
+            "company": "Empresa"
+        },
+        {
+            "course_name": "Nome do curso",
+            "company": "Empresa"
+        },
+        {
+            "course_name": "Nome do curso",
+            "company": "Empresa"
+        },
+        {
+            "course_name": "Nome do curso",
+            "company": "Empresa"
+        }
+    ],
+    "contacts": [
+        {
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/davi-mordonho-9b9b3b1b3/"
+        },
+        {
+            "name": "instagram",
+            "link": "https://www.instagram.com/davii_lv"
+        },
+        {
+            "name": "whatsapp",
+            "link": "https://api.whatsapp.com/send?phone=81986438366"
+        },
+        {
+            "name": "email",
+            "link": "josedavimordonhoguimaraes@gmail.com"
+        },
+        {
+            "name": "github",
+            "link": "https://github.com/Davi-Lv"
+        }
+    ]
+}

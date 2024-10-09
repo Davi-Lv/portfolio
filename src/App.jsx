@@ -1,141 +1,57 @@
-import './App.css'
-import Projetos from './components/projetos'
-import ImgProjetoQuemSou from "../src/assets/Group 1.png";
-import Html5 from '../src/assets/html5.svg'
-import CSS3 from '../src/assets/css3.svg'
-import Java from "../src/assets/java.svg";
-import JavaScript from "../src/assets/javascript.svg";
-import ReacteReactNative from "../src/assets/react.svg";
-import GiteGitHub from "../src/assets/gitEGithub.svg";
-import Figma from "../src/assets/figma.svg";
-import Photoshop from "../src/assets/photoshop.svg";
-import Ilustrator from "../src/assets/ilustrator.svg";
-import linkedin from "../src/assets/linkedin.svg";
-import instagram from "../src/assets/instagram.svg";
-import whatsapp from "../src/assets/whatsapp.svg";
-import email from "../src/assets/email.svg";
-import github from "../src/assets/github.svg";
+import React, { useState } from 'react';
+import './App.css';
+import Projetos from './components/MeusProjetos';
+import PerfilImage from "../src/assets/perfilImage.svg";
 import NavBar from './layout/NavBar';
-import Footer from './layout/Footer'
+import Footer from './layout/Footer';
+import Copy from "../src/assets/copy.svg";
+import CopyOK from "../src/assets/copyOK.svg";
+import Circle from "../src/assets/circle.svg";
 
 export default function App() {
+  const [icon, setIcon] = useState(Copy);
+  const copyEmail = "josedavimordonhoguimaraes@gmail.com";
+
+  const handleCopyClick = () => {
+    navigator.clipboard.writeText(copyEmail).then(() => {
+      setIcon(CopyOK);
+      setTimeout(() => {
+        setIcon(Copy);
+      }, 1500);
+    });
+  };
+
   return (
-    <body className="App">
+    <div className="App">
 
       <NavBar />
 
-      <div className='QuemSou'>
-        <div>
-          <h1 className='olaeusou'>Olá, eu sou</h1>
-          <h1 className='davimordonho'>Davi Mordonho</h1>
+      <div className='container'>
+        <div className="status-trabalho">
+          <img src={Circle} alt="" /> <span>Disponível para trabalho</span>
+        </div>
+
+        <div className='info'>
+          <div className="QuemNome">
+            <h1 className='olaeusou'>Olá, eu sou</h1>
+            <h1 className='davimordonho'>Davi Mordonho</h1>
+          </div>
           <p className='paragrafoQuemSou'>Estudante de analise e desenvolvimento de sistemas no Instituto Federal de Pernambuco</p>
-          <button className="saberMais"><span>sobre mim</span></button>
+
+          <div className="botaobg">
+            <button className="saberMais"><span>sobre mim</span></button>
+            <button className="saberMais" onClick={handleCopyClick}>
+              <img src={icon} alt="copy icon" />Copiar email
+            </button>
+          </div>
         </div>
 
-        <div className='imgQuemSou'>
-          <img src={ImgProjetoQuemSou} alt="imagens: exemplos de projetos" />
-        </div>
+        <img className='perfilImage' src={PerfilImage} alt="imagens: exemplos de projetos" />
       </div>
 
-      <div className="habilidades">
-
-        <h1>Habilidade</h1>
-        <div className="bloco1">
-          <div className='iconAndName'>
-            <img src={Html5} alt="HTML 5" />
-            <p>HTML 5</p>
-          </div>
-          <div className='iconAndName'>
-            <img src={CSS3} alt="CSS 3" />
-            <p>CSS 3</p>
-          </div>
-          <div className='iconAndName'>
-            <img src={Java} alt="Java" />
-            <p>Java</p>
-          </div>
-        </div>
-        <div className="bloco2">
-          <div className='iconAndName'>
-            <img src={JavaScript} alt="JavaScript" />
-            <p>JavaScript</p>
-            <p></p>
-          </div>
-          <div className='iconAndName'>
-            <img src={ReacteReactNative} alt="React e React Native" />
-            <p>React.Js</p>
-          </div>
-          <div className='iconAndName'>
-            <img src={GiteGitHub} alt="Git e GitHub" />
-            <p>Git e GitHub</p>
-          </div>
-        </div>
-
-        <div className="linha" />
-
-        <div className="bloco3">
-          <div className='iconAndName'>
-            <img src={Figma} alt="Figma" />
-            <p>Figma</p>
-          </div>
-          <div className='iconAndName'>
-            <img src={Photoshop} alt="Photoshop" />
-            <p>Photoshop</p>
-          </div>
-          <div className='iconAndName'>
-            <img src={Ilustrator} alt="Ilustrator" />
-            <p>Ilustrator</p>
-          </div>
-        </div >
-      </div >
-
-      <div className="meusProjetos">
-        <h1 name="projetos">Meus Projetos</h1>
-        <div className="projetos">
-          <Projetos nomeDoProjeto="teste 1" />
-          <Projetos nomeDoProjeto="teste 2" />
-          <Projetos nomeDoProjeto="teste 3" />
-          <Projetos nomeDoProjeto="teste 4" />
-        </div>
-        <button>Ver todos os projetos</button>
-      </div>
-
-      <div className="linha2" />
-      <div name="Contatos" className="contatos">
-        <p>Interessado em entrar em contato ?</p>
-      </div>
-
-      <div className="redes wrapper">
-        <div class="icon linkedin">
-          <span class="tooltip">linkedin</span>
-          <img src={linkedin} alt="linkedin" />
-        </div>
-
-        <div class="icon Instagram">
-          <span class="tooltip">Instagram</span>
-          <img src={instagram} alt="instagram" />
-        </div>
-
-        <div class="icon Whatsapp">
-          <span class="tooltip">Whatsapp</span>
-          <img src={whatsapp} alt="whatsapp" />
-        </div>
-
-        <div class="icon Email">
-          <span class="tooltip">Email</span>
-          <img src={email} alt="email" />
-        </div>
-
-        <div class="icon GitHub">
-          <span class="tooltip">GitHub</span>
-          <img src={github} alt="github" />
-        </div>
-
-      </div>
-
-      <div className="linha3" />
+      <Projetos />
 
       <Footer />
-    </body>
-  )
+    </div>
+  );
 }
-

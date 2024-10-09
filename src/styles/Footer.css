@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  line-height: 18px;
+  font-size: 14px;
+  font-style: normal;
+  background: #ff8a1e;
+  max-width: 1171px;
+  margin: 30px auto;
+  border-radius: 12px;
+}
+.footer img {
+  padding-left: 8px;
+}
+.footer a {
+  color: #1c1c1c;
+  font-weight: 700;
+  text-decoration: none;
+}
