@@ -1,0 +1,45 @@
+.OpMenu {
+  display: flex;
+  justify-content: flex-start;
+  margin: 34px auto;
+  max-width: 1171px;
+  gap: 10px;
+}
+
+.tab {
+  padding: 8px 26px;
+  border: none;
+  outline: none;
+  background-color: #f1f1f1;
+  color: #000;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  border: 1px solid #CECECE;
+}
+
+.tab.active {
+  background-color: #ff8a1e;
+  color: #000;
+  border: 1px solid #B65700;
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+.tabcontent {
+  max-width: 1171px;
+  margin: 0 auto;
+}
+
+.tabcontent h2 {
+  margin-bottom: 10px;
+}
+
+.tabcontent p {
+  font-size: 18px;
+  line-height: 1.6;
+}

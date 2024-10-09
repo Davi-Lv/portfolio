@@ -33,68 +33,68 @@
         "biblioteca": [
             {
                 "id": 1,
-                "image": "link da imagem",
-                "title": "The Dip",
+                "image": "https://m.media-amazon.com/images/I/41qed0klJGL._SY445_SX342_.jpg",
+                "title": "O Melhor do Mundo",
                 "description": "Um livrinho que ensina quando desistir (e quando persistir).",
                 "rating": "4.5",
                 "pages": "80",
-                "link": "Ver na amazon"
+                "link": "https://amzn.to/4eXotjh"
             },
             {
                 "id": 2,
-                "image": "link da imagem",
+                "image": "https://m.media-amazon.com/images/I/41Grvx8GGHL._SY445_SX342_.jpg",
                 "title": "O mesmo de sempre",
                 "description": "Ao invés de tentar prever o que virá, é mais eficaz olhar para o \"que não muda nunca\".",
                 "rating": "4.7",
                 "pages": "232",
-                "link": "Ver na amazon"
+                "link": "https://amzn.to/3ZYA7WV"
             },
             {
                 "id": 3,
-                "image": "link da imagem",
+                "image": "https://m.media-amazon.com/images/I/51DOkmV31rL._SY445_SX342_.jpg",
                 "title": "Hábitos Atômicos",
                 "description": "Um método fácil e comprovado de criar bons hábitos e se livrar dos maus.",
                 "rating": "4.8",
                 "pages": "320",
-                "link": "Ver na amazon"
+                "link": "https://amzn.to/4f0XVxP"
             }
         ],
         "para_desenvolvedor": [
             {
                 "id": 4,
-                "image": "link da imagem",
+                "image": "https://m.media-amazon.com/images/I/41aHzYSXZkL._SY445_SX342_.jpg",
                 "title": "Clean Code",
                 "description": "Um guia para escrever código limpo e sustentável.",
                 "rating": "4.7",
                 "pages": "464",
-                "link": "Ver na amazon"
+                "link": "https://amzn.to/4804nCM"
             },
             {
                 "id": 5,
-                "image": "link da imagem",
+                "image": "https://m.media-amazon.com/images/I/81RXMnEXrdL._SY466_.jpg",
                 "title": "O Design Patterns: Elementos de Reutilização de Software",
                 "description": "Um clássico sobre padrões de projeto.",
                 "rating": "4.6",
                 "pages": "395",
-                "link": "Ver na amazon"
+                "link": "https://amzn.to/3ZY4JYF"
             }
         ],
         "dicas_de_presentes": [
             {
                 "id": 6,
-                "image": "link da imagem",
-                "title": "Echo Dot (4ª Geração)",
+                "image": "https://m.media-amazon.com/images/I/617-HLllfZL._AC_SY300_SX300_.jpg",
+                "title": "Echo Dot (5ª Geração)",
                 "description": "Smart Speaker com Alexa - Cor Preta",
                 "rating": "4.7",
-                "link": "Ver na amazon"
+                "link": "https://amzn.to/4dEcm9R"
             },
             {
                 "id": 7,
-                "image": "link da imagem",
-                "title": "Kindle Paperwhite",
+                "image": "https://m.media-amazon.com/images/I/81ZvbEt1aAL._AC_SY300_SX300_.jpg",
+                "title": "Kindle",
                 "description": "Amazon - Cor Preta",
-                "rating": "4.6",
-                "link": "Ver na amazon"
+                "rating": "4.8",
+                "link": "https://amzn.to/4eCmDoq"
             }
         ]
     },

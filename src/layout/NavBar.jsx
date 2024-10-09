@@ -18,13 +18,11 @@ export default function NavBar() {
                 </Link>
             </div>
 
-            <a href="#Contatos">
-                <Link ignoreCancelEvents spy={true} offset={-45} duration={1000} to="Contatos" smooth={true}>
-                    <button href="#Contatos" className='botaoContatos'>
-                        Contatos
-                    </button>
-                </Link>
-            </a>
+            <Link ignoreCancelEvents spy={true} offset={-45} duration={1000} to="Contatos" smooth={true}>
+                <button className='botaoContatos'>
+                    Contatos
+                </button>
+            </Link>
         </header>
     )
 }

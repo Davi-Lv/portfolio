@@ -1,25 +1,68 @@
 .BlocoProjeto p {
-    padding: 6px 4px 0px 4px;
-    margin: 0;    
-    transition: ease 0.3s;
-    width: 245px;
-    height: 48px;
-    left: 448px;
-    top: 1428px;
-    cursor: default;
+  padding: 6px 4px 0px 4px;
+  margin: 0;
+  transition: ease 0.3s;
+  width: 245px;
+  height: 48px;
+  left: 448px;
+  top: 1428px;
+  cursor: default;
 }
 
 .BlocoProjeto img:hover {
-    opacity: 0.2;
-    transition: ease 0.3s;
-    cursor: pointer;
+  opacity: 0.2;
+  transition: ease 0.3s;
+  cursor: pointer;
 }
 .picture:hover {
-    background: #FFAA21;
-    border-radius: 15px;
-    transition: ease 0.3s;
+  background: #ffaa21;
+  border-radius: 15px;
+  transition: ease 0.3s;
 }
 
 .picture:active {
-    background-color: #F0F0F1;
-   }
+  background-color: #f0f0f1;
+}
+
+.meusProjetos {
+  padding-bottom: 75px;
+
+  max-width: 1171px;
+  margin: 0 auto;
+}
+
+.meusProjetos button {
+  background: #1c1c1c;
+  color: #ff8a1e;
+
+  width: 189px;
+  height: 44px;
+  left: 939px;
+  top: 1517px;
+
+  border-radius: 25px;
+  border: none;
+
+  display: flex;
+  margin: auto;
+
+  justify-content: center;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.meusProjetos button:hover {
+  background: #fba720;
+  color: #1c1c1c;
+}
+
+.meusProjetos button:active {
+  background-color: #f0f0f1;
+}

@@ -14,7 +14,6 @@ export default function MeusProjetos() {
 
     return (
         <div className="meusProjetos">
-            <h1 name="projetos">Meus Projetos</h1>
             <div className="projetos">
                 {projetos.map((projeto, index) => (
                     <div key={index} className="BlocoProjeto">

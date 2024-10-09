@@ -1,0 +1,192 @@
+.opRecomedacoes {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1228px) {
+  .opRecomedacoes {
+    padding: 1rem;
+  }
+}
+
+.cardOP {
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #cecece;
+  transition: all 0.5s;
+  min-width: 250px;
+}
+
+.cardOP,
+.linha,
+.cardOP-body p,
+.cardOP-header img,
+.cardOP-header-info h2,
+.cardOP-header-info p {
+  transition: all 0.5s;
+}
+
+.cardOP:hover {
+  cursor: pointer;
+}
+
+.cardOP.selected,
+.cardOP:hover {
+  border: 1px solid #ff8a1e;
+  background-color: #fff9f4;
+}
+
+.cardOP.selected .cardOP-header img,
+.cardOP:hover .cardOP-header img {
+  border: 1px solid #ff8a1e;
+  filter: invert(39%) sepia(100%) saturate(1866%) hue-rotate(2deg)
+    brightness(103%) contrast(101%);
+}
+
+.cardOP.selected .cardOP-header-info h2,
+.cardOP.selected .cardOP-header-info p,
+.cardOP:hover .cardOP-header-info h2,
+.cardOP:hover .cardOP-header-info p {
+  color: #ff8a1e;
+}
+
+.cardOP.selected .linha,
+.cardOP:hover .linha {
+  background-color: #ff8a1e;
+}
+
+.cardOP.selected .cardOP-body p,
+.cardOP:hover .cardOP-body p {
+  color: #ff8a1e;
+}
+
+.cardOP,
+.cardOP-header img,
+.cardOP-header-info h2,
+.cardOP-header-info p {
+  transition: all 0.3s;
+}
+
+.cardOP-header {
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cardOP-header img {
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  border: 1px solid #cecece;
+  border-radius: 12px;
+}
+
+.cardOP-header-info h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #616161;
+}
+
+.cardOP-header-info p {
+  margin: 5px 0 0;
+  color: #616161;
+}
+
+.cardOP-body {
+  padding: 20px;
+}
+
+.cardOP-body p {
+  margin: 0;
+  color: #616161;
+  line-height: 1.6;
+}
+
+.linha {
+  width: 90%;
+  height: 1px;
+  background-color: #cecece;
+  margin: 0 auto;
+}
+.recomendacaoSelecionada {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+.recomendacoes {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin-top: 10px;
+}
+.cardRecomedacoes {
+  border-radius: 12px;
+  border: 1px solid #cecece;
+  width: 368px;
+}
+.cardRecomedacoes-header {
+  display: flex;
+  padding: 25px;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.cardRecomedacoes-header-info a {
+  margin: 0;
+  font-size: 18px;
+  color: #222222;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 16ch;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-weight: 700;
+}
+.cardRecomedacoes-header-info a:hover {
+  color: #ff8a1e;
+  cursor: pointer;
+}
+.cardRecomedacoes-header-info p {
+  margin: 0;
+  color: #616161;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ratingAndPages {
+  display: flex;
+  gap: 0.5rem;
+}
+.ratingAndPages p {
+  margin: 0;
+  color: #616161;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.LinkAmazon {
+  display: flex;
+  padding: 8px 18px;
+  background-color: #ff8a1e;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.LinkAmazon:hover {
+  background-color: #ffaa21;
+  color: #4b4b4b !important;
+  cursor: pointer;
+}
