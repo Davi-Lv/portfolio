@@ -13,7 +13,24 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-
+@media (max-width: 1228px) {
+  .container {
+    margin: 0 1rem !important;
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 860px) {
+  .container {
+    padding: 5rem 2rem 0 2rem;
+    flex-direction: column;
+  }
+  .myName {
+    font-size: 40px !important;
+  }
+  .olaeusou {
+    font-size: 24px !important;
+  }
+}
 .botaoContatos {
   border: none;
   background: #1c1c1c;
@@ -40,7 +57,7 @@ body {
 }
 
 .olaeusou,
-.davimordonho,
+.myName,
 .paragrafoQuemSou {
   font-style: normal;
   margin: 0px;
@@ -51,10 +68,11 @@ body {
 
   color: #e3e3e3;
 }
-.davimordonho {
+.myName {
   font-weight: 700;
   font-size: 58px;
   margin-top: -10px;
+  list-style: none;
 
   color: #ff8a1e;
 }
@@ -66,8 +84,7 @@ body {
 
   color: #c8c8c8;
 
-  width: 388px;
-  height: 42px;
+  max-width: 388px;
 }
 .container {
   position: relative;

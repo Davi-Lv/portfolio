@@ -13,7 +13,10 @@ export default function MeusProjetos() {
     ];
 
     return (
-        <div className="meusProjetos">
+        <div>
+            Meus Projetos
+            {/*
+                <div className="meusProjetos">
             <div className="projetos">
                 {projetos.map((projeto, index) => (
                     <div key={index} className="BlocoProjeto">
@@ -25,6 +28,9 @@ export default function MeusProjetos() {
                 ))}
             </div>
             <button>Ver todos os projetos</button>
+        </div>
+
+            */}
         </div>
     )
 }

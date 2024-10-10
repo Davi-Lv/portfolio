@@ -1,5 +1,6 @@
 import '../styles/Recomendacoes.css';
 import Book from '../assets/Book.svg';
+import Rating from '../assets/ratingIcon.svg';
 import React, { useEffect, useState } from 'react';
 
 export default function Recomendacoes() {
@@ -15,10 +16,6 @@ export default function Recomendacoes() {
 
     function handleSelectRecommendation(nome) {
         setSelectedRecommendation(nome.toLowerCase());
-    }
-
-    function formatRecommendationName(name) {
-        return name.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
     }
 
     function CardOP({ imgSrc, nome, Subtitulo, texto, onClick, isSelected }) {
@@ -45,10 +42,10 @@ export default function Recomendacoes() {
                 <div className="cardRecomedacoes-header">
                     <img src={imgSrc} alt="Foto de perfil" />
                     <div className="cardRecomedacoes-header-info">
-                        <a href={link}>{title}</a>
-                        <p>{description}</p>
+                        <a href={link} title={title}>{title}</a>
+                        <p title={description}>{description}</p>
                         <div className="ratingAndPages">
-                            <p>{rating} | {pages} páginas</p>
+                            <img src={Rating} alt="Rating" /><p>{rating} {pages ? `| ${pages} páginas` : ''} </p>
                         </div>
                         <a href={link} className="LinkAmazon">Ver na amazon</a>
                     </div>
@@ -64,7 +61,7 @@ export default function Recomendacoes() {
             <CardRecomedacoes
                 key={rec.id}
                 imgSrc={rec.image}
-                title={rec.title}
+                title={rec.title.replace(/_/g, ' ')}
                 description={rec.description}
                 rating={rec.rating}
                 pages={rec.pages}
@@ -98,12 +95,12 @@ export default function Recomendacoes() {
                     Subtitulo="Livros essenciais para desenvolvedores."
                     texto="Melhore suas habilidades de programação!"
                     onClick={() => handleSelectRecommendation("para_desenvolvedor")}
-                    isSelected={selectedRecommendation === "para_desenvolvedor"}
+                    isSelected={selectedRecommendation === "Para_desenvolvedor"}
                 />
             </div>
 
             <div className="recomendacaoSelecionada">
-                Recomendação selecionada: <strong>{formatRecommendationName(selectedRecommendation)}</strong>
+                Recomendação selecionada: <strong>{selectedRecommendation.replace(/_/g, ' ')}</strong>
             </div>
 
             <div className="recomendacoes">

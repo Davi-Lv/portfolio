@@ -1,4 +1,4 @@
-.menu {  
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,7 +6,7 @@
   margin: 30px auto;
 }
 .nav {
-  display: flex; 
+  display: flex;
 }
 .buttomNav {
   margin-right: 35px;
@@ -17,7 +17,7 @@
   font-size: 16px;
   line-height: 20px;
 }
-.botaoMenu {  
+.botaoMenu {
   font-size: 16px;
   color: #1c1c1c;
   font-weight: 600;
@@ -28,7 +28,7 @@
 }
 .botaoMenu:focus,
 .botaoMenu:hover {
-  color: #2F2F2F;
+  color: #2f2f2f;
 }
 .botaoMenu:hover:after {
   width: 100%;
@@ -42,8 +42,55 @@
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #FBA720;
+  background-color: #fba720;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
+}
+
+@media (max-width: 1228px) {
+  .menu {
+    padding: 0 1rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  .nav.active {
+    display: flex;
+    opacity: 1;
+    max-height: 500px;
+    transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+  }
+  .buttomNav {
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    background: none;
+    border: none;
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
 }

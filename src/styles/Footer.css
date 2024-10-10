@@ -17,3 +17,8 @@
   font-weight: 700;
   text-decoration: none;
 }
+@media (max-width: 1228px) {
+  .footer {
+    margin: 30px 1rem !important;
+  }
+}

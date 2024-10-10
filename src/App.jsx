@@ -51,7 +51,7 @@ export default function App() {
         <div className='info'>
           <div className="QuemNome">
             <h1 className='olaeusou'>Olá, eu sou</h1>
-            <h1 className='davimordonho'>{data.personal_info.name}</h1>
+            <h1 className='myName'>{data.personal_info.name}</h1>
           </div>
           <p className='paragrafoQuemSou'>{data.personal_info.education}</p>
 

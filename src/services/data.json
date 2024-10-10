@@ -35,7 +35,7 @@
                 "id": 1,
                 "image": "https://m.media-amazon.com/images/I/41qed0klJGL._SY445_SX342_.jpg",
                 "title": "O Melhor do Mundo",
-                "description": "Um livrinho que ensina quando desistir (e quando persistir).",
+                "description": "Um livrinho que ensina quando desistir (e quando persistir). Um livro que todo mundo deveria ler.",
                 "rating": "4.5",
                 "pages": "80",
                 "link": "https://amzn.to/4eXotjh"
@@ -44,7 +44,7 @@
                 "id": 2,
                 "image": "https://m.media-amazon.com/images/I/41Grvx8GGHL._SY445_SX342_.jpg",
                 "title": "O mesmo de sempre",
-                "description": "Ao invés de tentar prever o que virá, é mais eficaz olhar para o \"que não muda nunca\".",
+                "description": "Ao invés de tentar prever o que virá, é mais eficaz olhar para o \"que não muda nunca\". ",
                 "rating": "4.7",
                 "pages": "232",
                 "link": "https://amzn.to/3ZYA7WV"
@@ -53,7 +53,7 @@
                 "id": 3,
                 "image": "https://m.media-amazon.com/images/I/51DOkmV31rL._SY445_SX342_.jpg",
                 "title": "Hábitos Atômicos",
-                "description": "Um método fácil e comprovado de criar bons hábitos e se livrar dos maus.",
+                "description": "Um método fácil e comprovado de criar bons hábitos e se livrar dos maus. Um livro que todo mundo deveria ler.",
                 "rating": "4.8",
                 "pages": "320",
                 "link": "https://amzn.to/4f0XVxP"
@@ -64,7 +64,7 @@
                 "id": 4,
                 "image": "https://m.media-amazon.com/images/I/41aHzYSXZkL._SY445_SX342_.jpg",
                 "title": "Clean Code",
-                "description": "Um guia para escrever código limpo e sustentável.",
+                "description": "Um guia para escrever código limpo e sustentável. Um livro que todo desenvolvedor deveria ler.",
                 "rating": "4.7",
                 "pages": "464",
                 "link": "https://amzn.to/4804nCM"
@@ -73,7 +73,7 @@
                 "id": 5,
                 "image": "https://m.media-amazon.com/images/I/81RXMnEXrdL._SY466_.jpg",
                 "title": "O Design Patterns: Elementos de Reutilização de Software",
-                "description": "Um clássico sobre padrões de projeto.",
+                "description": "Um clássico sobre padrões de projeto. Um livro que todo desenvolvedor deveria ler.",
                 "rating": "4.6",
                 "pages": "395",
                 "link": "https://amzn.to/3ZY4JYF"
@@ -84,17 +84,33 @@
                 "id": 6,
                 "image": "https://m.media-amazon.com/images/I/617-HLllfZL._AC_SY300_SX300_.jpg",
                 "title": "Echo Dot (5ª Geração)",
-                "description": "Smart Speaker com Alexa - Cor Preta",
+                "description": "Smart Speaker com Alexa - Cor Preta. Um presente para quem ama tecnologia.",
                 "rating": "4.7",
                 "link": "https://amzn.to/4dEcm9R"
             },
             {
                 "id": 7,
                 "image": "https://m.media-amazon.com/images/I/81ZvbEt1aAL._AC_SY300_SX300_.jpg",
-                "title": "Kindle",
-                "description": "Amazon - Cor Preta",
+                "title": "Kindle 11a. geração",
+                "description": "Amazon - Cor Preta. Um presente para quem ama ler.",
                 "rating": "4.8",
                 "link": "https://amzn.to/4eCmDoq"
+            },
+            {
+                "id": 8,
+                "image": "https://m.media-amazon.com/images/I/71E9GeEQE0L.__AC_SX300_SY300_QL70_ML2_.jpg",
+                "title": "JBL GO 4 - Preto",
+                "description": "Caixa de Som Portátil com Bluetooth e à Prova D'água. Um presente para quem ama música.",
+                "rating": "4,8",
+                "link": "https://amzn.to/4eZ0DUk"
+            },
+            {
+                "id": 9,
+                "image": "https://m.media-amazon.com/images/I/51eXBGX+MYL._AC_SX300_SY300_.jpg",
+                "title": "Mouse Gamer Sem Fio Logitech G305",
+                "description": "Um mouse repleto de recursos avançados. Um baita presente para quem é gamer.",
+                "rating": "4.8",
+                "link": "https://amzn.to/4eCL0Cr"
             }
         ]
     },
