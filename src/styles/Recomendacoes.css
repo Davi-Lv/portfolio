@@ -19,7 +19,20 @@
     padding: 0 1rem;
   }
 }
-
+@media (max-width: 460px) {
+  .recomendacoes {
+    flex-wrap: wrap !important;
+  }
+  .cardRecomedacoes-header {
+    width: auto !important;
+  }
+}
+.opRecomedacoes::-webkit-scrollbar,
+.OpMenu::-webkit-scrollbar,
+.recomendacoes::-webkit-scrollbar,
+.recomendacaoSelecionada::-webkit-scrollbar {
+  display: none;
+}
 .cardOP {
   background-color: #fff;
   border-radius: 16px;
@@ -123,7 +136,10 @@
 .recomendacaoSelecionada {
   font-size: 18px;
   font-weight: 600;
+  display: flex;
+  align-items: center;
   margin-top: 3rem;
+  gap: 2rem;
 }
 .recomendacoes {
   display: flex;
@@ -149,7 +165,6 @@
 .cardRecomedacoes-header img {
   width: 130px;
   border: 1px solid #cecece;
-  object-fit: cover;
   border-radius: 12px;
 }
 
@@ -209,4 +224,35 @@
   background-color: #ffaa21;
   color: #4b4b4b !important;
   cursor: pointer;
+}
+.ratingAndPages img {
+  border: none;
+  border-radius: 0;
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.navigation button {
+  background-color: #ff8a1e;
+  color: #000;
+  border: none;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navigation button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.navigation button:not(:disabled):hover {
+  background-color: #ffaa21;
 }

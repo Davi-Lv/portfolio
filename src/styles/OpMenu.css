@@ -4,13 +4,17 @@
   margin: 34px auto;
   max-width: 1171px;
   gap: 10px;
-  overflow-x: auto; /* Permite rolagem horizontal */
-  white-space: nowrap; /* Impede que os itens quebrem para a próxima linha */
+  overflow-x: auto;
+  white-space: nowrap;
 }
-
+@media (max-width: 768px) {
+  .tab {
+    padding: 8px 18px !important;
+    font-size: 15px !important;
+  }
+}
 .tab {
-  padding: 8px 26px;
-  border: none;
+  padding: 8px 24px;
   outline: none;
   background-color: #f1f1f1;
   color: #000;
@@ -19,14 +23,14 @@
   font-size: 16px;
   font-weight: 600;
   transition: background-color 0.3s;
-  border: 1px solid #CECECE;
-  flex-shrink: 0; /* Impede que os botões encolham */
+  border: 1px solid #cecece;
+  flex-shrink: 0;
 }
 
 .tab.active {
   background-color: #ff8a1e;
   color: #000;
-  border: 1px solid #B65700;
+  border: 1px solid #b65700;
 }
 
 .tab:hover {
@@ -44,5 +48,5 @@
 
 .tabcontent p {
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.2;
 }

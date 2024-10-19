@@ -6,6 +6,8 @@ import React, { useEffect, useState } from 'react';
 export default function Recomendacoes() {
     const [selectedRecommendation, setSelectedRecommendation] = useState("biblioteca");
     const [recommendations, setRecommendations] = useState({});
+    const [currentPage, setCurrentPage] = useState(0);
+    const itemsPerPage = 3;
 
     useEffect(() => {
         fetch('https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/services/data.json')
@@ -16,6 +18,7 @@ export default function Recomendacoes() {
 
     function handleSelectRecommendation(nome) {
         setSelectedRecommendation(nome.toLowerCase());
+        setCurrentPage(0); // Reset page to 0 when changing recommendation
     }
 
     function CardOP({ imgSrc, nome, Subtitulo, texto, onClick, isSelected }) {
@@ -57,7 +60,11 @@ export default function Recomendacoes() {
     const renderRecommendations = () => {
         if (!recommendations[selectedRecommendation]) return null;
 
-        return recommendations[selectedRecommendation].map(rec => (
+        const startIndex = currentPage * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const currentRecommendations = recommendations[selectedRecommendation].slice(startIndex, endIndex);
+
+        return currentRecommendations.map(rec => (
             <CardRecomedacoes
                 key={rec.id}
                 imgSrc={rec.image}
@@ -69,6 +76,16 @@ export default function Recomendacoes() {
             />
         ));
     };
+
+    const handleNextPage = () => {
+        setCurrentPage(prevPage => prevPage + 1);
+    };
+
+    const handlePreviousPage = () => {
+        setCurrentPage(prevPage => prevPage - 1);
+    };
+
+    const totalPages = Math.ceil((recommendations[selectedRecommendation]?.length || 0) / itemsPerPage);
 
     return (
         <div>
@@ -95,17 +112,24 @@ export default function Recomendacoes() {
                     Subtitulo="Livros essenciais para desenvolvedores."
                     texto="Melhore suas habilidades de programação!"
                     onClick={() => handleSelectRecommendation("para_desenvolvedor")}
-                    isSelected={selectedRecommendation === "Para_desenvolvedor"}
+                    isSelected={selectedRecommendation === "para_desenvolvedor"}
                 />
             </div>
 
             <div className="recomendacaoSelecionada">
-                Recomendação selecionada: <strong>{selectedRecommendation.replace(/_/g, ' ')}</strong>
+                <div>Recomendação selecionada: <strong>{selectedRecommendation.replace(/_/g, ' ')}</strong></div>
             </div>
 
             <div className="recomendacoes">
                 {renderRecommendations()}
             </div>
+
+            {totalPages > 1 && (
+                <div className="navigation">
+                    <button onClick={handlePreviousPage} disabled={currentPage === 0}>Pagina Anterior</button>
+                    <button onClick={handleNextPage} disabled={currentPage === totalPages - 1}>Próxima Pagina</button>
+                </div>
+            )}
         </div>
     );
 }

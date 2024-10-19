@@ -1,0 +1,138 @@
+.profile {
+  gap: 0.5rem;
+  background: #fff;
+  display: flex;
+  border-radius: 12px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.profile img {
+  border-radius: 16px;
+  width: 136px;
+  margin-bottom: 10px;
+}
+
+.profile h1 {
+  font-size: 24px;
+}
+
+.profile p {
+  font-size: 14px;
+  color: #666;
+  margin: 3px;
+}
+
+.profile ul {
+  list-style: none;
+  padding: 0 0 0 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile ul li a {
+  text-decoration: none;
+  color: #ff8a1e;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.profile ul li a:hover {
+  color: #1c1c1c;
+}
+
+.profile ul li span {
+  color: #666;
+  font-size: 12px;
+}
+
+.github-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff8a1e;
+  border: 1px solid #b65700;
+  color: #000;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.github-button:hover {
+  background-color: #ff6f00;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.profile-info p {
+  padding-left: 10px;
+  text-align: left;
+}
+.profile-info h1 {
+  margin: 0;
+  text-align: left;
+}
+.repos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.profile-info h1,
+.repos h2 {
+  margin: 0;
+  font-size: 18px;
+}
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 860px) {
+  .profile {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .profile-header, .profile-info, .repos {
+    padding: 2rem 2rem !important;
+  }
+}
+@media (max-width: 1228px) {
+  .profile {
+    margin: 0 1rem !important;
+  }
+  .profile-header, .profile-info, .repos {
+    padding: 2.5rem 3rem !important;
+  }
+}
+
+.profile-header,
+.profile-info,
+.repos {
+  border: 1px solid #cecece;
+  border-radius: 12px;
+  padding: 2.5rem 4.5rem;
+  max-width: 447px;
+}
+.followers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.followers p {
+  display: inline-block;
+  padding: 12px 12px;
+  color: #000;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid #cecece;
+}

@@ -30,6 +30,9 @@ body {
   .olaeusou {
     font-size: 24px !important;
   }
+  .perfilImage {
+    width: 100% !important;
+  }
 }
 .botaoContatos {
   border: none;

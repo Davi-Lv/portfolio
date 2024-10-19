@@ -6,14 +6,12 @@ import Recomendacoes from './Recomendacoes';
 import SobreMin from './SobreMin';
 import MeusProjetos from './MeusProjetos';
 import GitHub from './GitHub';
-import Contacts from './Contacts';
 
 const tabs = [
     { name: 'Minhas Recomendações', id: 'recomendacoes' },
     { name: 'Sobre mim', id: 'sobre' },
-    { name: 'Meus projetos', id: 'projetos' },
+    //{ name: 'Meus projetos', id: 'projetos' },
     { name: 'Github', id: 'github' },
-    { name: 'Contatos', id: 'contatos' },
 ];
 
 const TabButton = memo(({ tab, isActive, onClick }) => (
@@ -35,7 +33,7 @@ TabButton.propTypes = {
 };
 
 const OpMenu = () => {
-    const [activeTab, setActiveTab] = useState('recomendacoes');
+    const [activeTab, setActiveTab] = useState('sobre');
 
     const openTab = (tabId) => {
         setActiveTab(tabId);
@@ -47,12 +45,10 @@ const OpMenu = () => {
                 return <Recomendacoes />;
             case 'sobre':
                 return <SobreMin />;
-            case 'projetos':
+            //case 'projetos':
                 return <MeusProjetos />;
             case 'github':
                 return <GitHub />;
-            case 'contatos':
-                return <Contacts />;
             default:
                 return null;
         }
