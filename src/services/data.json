@@ -114,6 +114,26 @@
             }
         ]
     },
+    "experience": [
+        {
+            "role": "Monitor de Programação Orientada a Objetos",
+            "company": "IFPE Campus Jaboatão",
+            "years": "mar de 2024 - set de 2024 · 7 meses",
+            "LinkCertificado": "https://www.linkedin.com/in/davi-mordonho-277948236/"        
+        },
+        {
+            "role": "Estágio em TI - Full Stack",
+            "company": "ADM serviços Pernambucano · Presencial",
+            "years": "jun de 2023 - jun de 2024 · 1 ano 1 mês",
+            "LinkCertificado": "https://www.linkedin.com/in/davi-mordonho-277948236/"        
+        },
+        {
+            "role": "Monitor de Banco de Dados 1",
+            "company": "IFPE Campus Jaboatão",
+            "years": "abr de 2023 - jul de 2023 · 4 meses",
+            "LinkCertificado": "https://www.linkedin.com/in/davi-mordonho-277948236/"        
+        }
+    ],
     "academic_history": [
         {
             "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/CursoImageIFPE.svg",
@@ -170,7 +190,7 @@
         {
             "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/Linkedin.svg",
             "name": "linkedin",
-            "link": "https://www.linkedin.com/in/davi-mordonho-9b9b3b1b3/"
+            "link": "https://www.linkedin.com/in/davi-mordonho-277948236"
         },
         {
             "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/Instagram.svg",
@@ -181,11 +201,6 @@
             "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/WhatsApp.svg",
             "name": "whatsapp",
             "link": "https://api.whatsapp.com/send?phone=5581986438366"
-        },
-        {
-            "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/Email.svg",
-            "name": "email",
-            "link": "mailto:josedavimordonhoguimaraes@gmail.com"
         },
         {
             "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/GitHub.svg",
