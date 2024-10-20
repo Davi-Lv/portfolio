@@ -9,7 +9,7 @@ import GitHub from './GitHub';
 
 const tabs = [
     { name: 'Minhas Recomendações', id: 'recomendacoes' },
-    { name: 'Sobre mim', id: 'sobre' },
+    { name: 'Quem Sou', id: 'sobre' },
     //{ name: 'Meus projetos', id: 'projetos' },
     { name: 'Github', id: 'github' },
 ];

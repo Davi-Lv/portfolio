@@ -116,6 +116,7 @@
     },
     "academic_history": [
         {
+            "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/CursoImageIFPE.svg",
             "degree": "Ensino Superior - Análise e Desenvolvimento de Sistemas",
             "institution": "Instituto Federal de Pernambuco - Campus Jaboatão",
             "years": "2021-2024"
@@ -123,40 +124,71 @@
     ],
     "certificates": [
         {
-            "course_name": "Nome do curso",
-            "company": "Empresa"
+            "image": "https://media.licdn.com/dms/image/v2/C560BAQER_QnUTXrPJw/company-logo_100_100/company-logo_100_100/0/1670264051233/amazon_web_services_logo?e=1737590400&v=beta&t=354bj7gCtJWOLFZV5oD5s_wx-RttZUA6QP1Rijp7cnU",
+            "course_name": "AWS Academy Graduate - AWS Academy Cloud Foundations",
+            "company": "Amazon Web Services (AWS)",
+            "shipping_date": "09/2024",
+            "link": "https://www.credly.com/badges/4cfca1b7-6639-419a-a8e8-55ef06882c7b"
         },
         {
-            "course_name": "Nome do curso",
-            "company": "Empresa"
+            "image": "https://media.licdn.com/dms/image/v2/C4E0BAQFgocdTGHthDA/company-logo_100_100/company-logo_100_100/0/1630604808565/cisco_networking_academy1_logo?e=1737590400&v=beta&t=lxWHZWazU2eoaitcdoXZQkaEpAWeCmIORC34AELdTbs",
+            "course_name": "IoT Fundamentals",
+            "company": "Cisco Networking Academy",
+            "shipping_date": "04/2024",
+            "link": "https://www.linkedin.com/in/davi-mordonho-277948236/details/certifications/1675137693/multiple-media-viewer/?profileId=ACoAADrfR3sB_WwqewP9sW_OwzyFXQmdzoCZs8I&treasuryMediaId=1728253164082&type=DOCUMENT"
         },
         {
-            "course_name": "Nome do curso",
-            "company": "Empresa"
+            "image": "https://media.licdn.com/dms/image/v2/C4D0BAQFeOs6hsMwHWA/company-logo_100_100/company-logo_100_100/0/1630485476857/ifpe_jaboatao_logo?e=1737590400&v=beta&t=8iTWHryONBW_N98fOa3u2MiBpYvfiOExlInkDAC_dfI",
+            "course_name": "Curso de Extensão Tecnológica - FACEPE",
+            "company": "IFPE Campus Jaboatão",
+            "shipping_date": "12/2023",
+            "link": "https://drive.google.com/file/d/1CO606YXZMaNWDCvgroWLxfTN3QwpYMJI/view?usp=sharing"
         },
         {
-            "course_name": "Nome do curso",
-            "company": "Empresa"
+            "image": "https://media.licdn.com/dms/image/v2/C4E0BAQFgocdTGHthDA/company-logo_100_100/company-logo_100_100/0/1630604808565/cisco_networking_academy1_logo?e=1737590400&v=beta&t=lxWHZWazU2eoaitcdoXZQkaEpAWeCmIORC34AELdTbs",
+            "course_name": "Cisco Certified CyberOps Associate",
+            "company": "Cisco Networking Academy",
+            "shipping_date": "08/2023",
+            "link": "https://www.credly.com/badges/23e9cb01-0a62-44a8-baeb-d972501e8a13/public_url"
+        },
+        {
+            "image": "https://media.licdn.com/dms/image/v2/C4D0BAQF8OT9RjVFVBw/company-logo_100_100/company-logo_100_100/0/1656305893939/igti_logo?e=1737590400&v=beta&t=bKaxe7gwUgsJFD1k9HsfM4PSPR0fhC6VMpEFbsrT5tQ",
+            "course_name": "Cientista de Dados",
+            "company": "Instituto de Gestão e Tecnologia da Informação",
+            "shipping_date": "05/2023",
+            "link": "https://drive.google.com/file/d/1iblSXRQMILDfmIMCv_Br1w6hBqPM3YfN/view?usp=sharing"
+        },
+        {
+            "image": "https://media.licdn.com/dms/image/v2/D4D0BAQEu0GhYNxdH6A/company-logo_100_100/company-logo_100_100/0/1726842819813/xpeducacao_logo?e=1737590400&v=beta&t=-nOlPGfPCy5j-rNs8iAO68wt7bznmAn4QwHqUFo66xo",
+            "course_name": "Desenvolvedor Mobile Multiplataforma",
+            "company": "XP Educação",
+            "shipping_date": "05/2023",
+            "link": "https://drive.google.com/file/d/1GzwlZGrbKbc8kEntvJ64H2KHALkRWkD1/view?usp=sharing"
         }
     ],
     "contacts": [
         {
+            "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/Linkedin.svg",
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/davi-mordonho-9b9b3b1b3/"
         },
         {
+            "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/Instagram.svg",
             "name": "instagram",
             "link": "https://www.instagram.com/davii_lv"
         },
         {
+            "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/WhatsApp.svg",
             "name": "whatsapp",
-            "link": "https://api.whatsapp.com/send?phone=81986438366"
+            "link": "https://api.whatsapp.com/send?phone=5581986438366"
         },
         {
+            "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/Email.svg",
             "name": "email",
-            "link": "josedavimordonhoguimaraes@gmail.com"
+            "link": "mailto:josedavimordonhoguimaraes@gmail.com"
         },
         {
+            "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/GitHub.svg",
             "name": "github",
             "link": "https://github.com/Davi-Lv"
         }
