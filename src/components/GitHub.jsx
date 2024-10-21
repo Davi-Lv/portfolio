@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/GitHub.css';
+import { TailSpin } from 'react-loader-spinner';
 
 export default function GitHub() {
     const [profile, setProfile] = useState(null);
@@ -23,12 +24,17 @@ export default function GitHub() {
         fetchUserData();
     }, []);
 
-    if (!profile) {
-        return <div>Carregando perfil...</div>;
-    }
-
-    if (!repos.length) {
-        return <div>Carregando repositórios recentes...</div>;
+    if (!profile || !repos.length) {
+        return (
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+                <TailSpin
+                    height="80"
+                    width="80"
+                    color="#ff8a1e"
+                    ariaLabel="loading"
+                />
+            </div>
+        );
     }
 
     return (

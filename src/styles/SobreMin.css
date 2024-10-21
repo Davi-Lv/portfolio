@@ -11,7 +11,7 @@ html {
 
 .containerAboutMe h2 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin: 0;
   margin-left: -30px;
   color: #ff8a1e;
 }
@@ -86,6 +86,18 @@ html {
   .AboutMeAndContent {
     width: 100% !important;
   }
+  .aboutMeDescricao {
+    font-size: 0.9rem !important;
+  }
+  .contactsList {
+    gap: 0.5rem !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .certificateList,
+  .courseList {
+    flex-direction: column !important;
+  }
 }
 @media (max-width: 1228px) {
   .AboutMe {
@@ -94,16 +106,17 @@ html {
 }
 
 .aboutMeTitulo {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 700;
   margin: 0px;
   color: #5c5c5c;
 }
 
 .aboutMeDescricao {
-  font-size: 1rem !important;
+  font-size: 1rem;
   color: #5c5c5c;
   margin: 0;
+  text-align: justify;
 }
 
 .historyAcademicAboutMe {
@@ -115,24 +128,16 @@ html {
   margin-bottom: 10px;
 }
 
-.curso {
-  margin-bottom: 20px;
-}
-
 .cursoImagem {
   width: 100px;
   height: 100px;
   object-fit: cover;
 }
 
-.cursoInfo {
-  margin-left: 10px;
-}
-
 .cursoPeriodo,
 .cursoNome,
 .cursoInstituicao {
-  margin: 5px 0;
+  margin: 0 !important;
 }
 
 .certificatesAboutMe {
@@ -144,30 +149,24 @@ html {
   margin-bottom: 10px;
 }
 
-.certificado {
-  margin-bottom: 20px;
-}
-
 .certificadoImagem {
   width: 100px;
   height: 100px;
   object-fit: cover;
 }
-
-.certificadoInfo {
-  margin-left: 10px;
-}
-
+.experienciaNome,
+.experienciaInstituicao,
+.experienciaPeriodo,
 .certificadoPeriodo,
 .certificadoNome,
 .certificadoInstituicao {
-  margin: 5px 0;
+  margin: 0;
 }
 
 .contactsAboutMe {
   margin-bottom: 20px;
 }
-.AboutMeTitle,
+.experienceTituloAboutMe,
 .historyAcademicTituloAboutMe,
 .certificatesTituloAboutMe,
 .contactsTituloAboutMe {
@@ -177,13 +176,22 @@ html {
   font-weight: 700;
   margin-bottom: 30px !important;
 }
+
+.AboutMeTitle {
+  position: relative;
+  color: #ff8a1e;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 30px 0 !important;
+}
+.experienceTituloAboutMe::after,
 .AboutMeTitle::after,
 .historyAcademicTituloAboutMe::after,
 .certificatesTituloAboutMe::after,
 .contactsTituloAboutMe::after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: -8px;
   left: 40px;
   transform: translateX(-50%);
   width: 75px;
@@ -196,4 +204,81 @@ html {
   border: 1px solid #cecece;
   border-radius: 12px;
   padding: 3rem;
+  background: #f9f9f9;
+}
+.experiencia,
+.curso,
+.certificado {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  gap: 1rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.experienciaimagem,
+.cursoImagem,
+.certificadoImagem {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.experienciaInfo,
+.cursoInfo,
+.certificadoInfo {
+  display: flex;
+  flex-direction: column;
+}
+.experienciaPeriodo,
+.cursoPeriodo,
+.certificadoPeriodo {
+  font-size: 14px !important;
+  color: #888;
+}
+.experienciaNome,
+.cursoNome,
+.certificadoNome {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.experienciaInstituicao,
+.cursoInstituicao,
+.certificadoInstituicao {
+  font-size: 16px !important;
+  color: #555;
+}
+.certificateList,
+.courseList {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.certificateList > *,
+.courseList > * {
+  flex: 1 1 calc(50% - 1rem);
+}
+.experiencia:hover,
+.certificado:hover {
+  background-color: #ff8b1e17;
+  border: 1px solid #ff8a1e;
+}
+.experienceList {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.contactsList {
+  display: flex;
+  gap: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
 }

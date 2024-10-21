@@ -48,6 +48,16 @@
   transition-property: width, left;
 }
 
+.hamburger {
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+  background: none;
+  border: none;
+  margin: 10px 0;
+  color: #1c1c1c;
+}
+
 @media (max-width: 1228px) {
   .menu {
     padding: 0 1rem !important;
@@ -78,15 +88,6 @@
     margin: 10px 0;
     width: 100%;
     text-align: left;
-  }
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    font-size: 24px;
-    background: none;
-    border: none;
-    margin: 10px 0;
-    color: #1c1c1c;
   }
 }
 

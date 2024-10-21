@@ -1,17 +1,19 @@
-import React, { useState, memo } from 'react';
+import React, { useContext, memo } from 'react';
 import PropTypes from 'prop-types';
 import "../styles/OpMenu.css";
+import { TabContext } from '../TabContext';
 
 import Recomendacoes from './Recomendacoes';
 import SobreMin from './SobreMin';
 import MeusProjetos from './MeusProjetos';
 import GitHub from './GitHub';
+import Contacts from './Contacts';
 
 const tabs = [
     { name: 'Minhas Recomendações', id: 'recomendacoes' },
     { name: 'Quem Sou', id: 'sobre' },
-    //{ name: 'Meus projetos', id: 'projetos' },
     { name: 'Github', id: 'github' },
+    { name: 'Contatos', id: 'contatos' },
 ];
 
 const TabButton = memo(({ tab, isActive, onClick }) => (
@@ -33,11 +35,7 @@ TabButton.propTypes = {
 };
 
 const OpMenu = () => {
-    const [activeTab, setActiveTab] = useState('sobre');
-
-    const openTab = (tabId) => {
-        setActiveTab(tabId);
-    };
+    const { activeTab, setActiveTab } = useContext(TabContext);
 
     const renderTabContent = () => {
         switch (activeTab) {
@@ -45,10 +43,10 @@ const OpMenu = () => {
                 return <Recomendacoes />;
             case 'sobre':
                 return <SobreMin />;
-            //case 'projetos':
-                return <MeusProjetos />;
             case 'github':
                 return <GitHub />;
+            case 'contatos':
+                return <Contacts />;
             default:
                 return null;
         }
@@ -62,7 +60,7 @@ const OpMenu = () => {
                         key={tab.id}
                         tab={tab}
                         isActive={activeTab === tab.id}
-                        onClick={openTab}
+                        onClick={setActiveTab}
                     />
                 ))}
             </div>

@@ -1,9 +1,11 @@
 import "../styles/NavBar.css";
 import { Link, animateScroll as scroll } from "react-scroll";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { TabContext } from '../TabContext';
 
 export default function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const { setActiveTab } = useContext(TabContext);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -11,6 +13,11 @@ export default function NavBar() {
 
     const closeMenu = () => {
         setMenuOpen(false);
+    };
+
+    const handleContatosClick = () => {
+        setActiveTab('contatos');
+        closeMenu();
     };
 
     return (
@@ -31,7 +38,7 @@ export default function NavBar() {
                 </a>
             </div>
 
-            <Link ignoreCancelEvents spy={true} offset={-45} duration={1000} to="Contatos" smooth={true} onClick={closeMenu}>
+            <Link ignoreCancelEvents spy={true} offset={-45} duration={1000} to="Contatos" smooth={true} onClick={handleContatosClick}>
                 <button className='botaoContatos'>
                     Contatos
                 </button>

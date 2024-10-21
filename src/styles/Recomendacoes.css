@@ -39,6 +39,7 @@
   border: 1px solid #cecece;
   transition: all 0.5s;
   min-width: 250px;
+  background: #f9f9f9;
 }
 
 .cardOP,

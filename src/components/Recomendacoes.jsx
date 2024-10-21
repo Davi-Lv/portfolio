@@ -2,23 +2,31 @@ import '../styles/Recomendacoes.css';
 import Book from '../assets/Book.svg';
 import Rating from '../assets/ratingIcon.svg';
 import React, { useEffect, useState } from 'react';
+import { TailSpin } from 'react-loader-spinner';
 
 export default function Recomendacoes() {
     const [selectedRecommendation, setSelectedRecommendation] = useState("biblioteca");
     const [recommendations, setRecommendations] = useState({});
     const [currentPage, setCurrentPage] = useState(0);
+    const [loading, setLoading] = useState(true);
     const itemsPerPage = 3;
 
     useEffect(() => {
         fetch('https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/services/data.json')
             .then(response => response.json())
-            .then(data => setRecommendations(data.recommendations))
-            .catch(error => console.error('Erro ao buscar dados:', error));
+            .then(data => {
+                setRecommendations(data.recommendations);
+                setLoading(false);
+            })
+            .catch(error => {
+                console.error('Erro ao buscar dados:', error);
+                setLoading(false);
+            });
     }, []);
 
     function handleSelectRecommendation(nome) {
         setSelectedRecommendation(nome.toLowerCase());
-        setCurrentPage(0); // Reset page to 0 when changing recommendation
+        setCurrentPage(0);
     }
 
     function CardOP({ imgSrc, nome, Subtitulo, texto, onClick, isSelected }) {
@@ -86,6 +94,19 @@ export default function Recomendacoes() {
     };
 
     const totalPages = Math.ceil((recommendations[selectedRecommendation]?.length || 0) / itemsPerPage);
+
+    if (loading) {
+        return (
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+                <TailSpin
+                    height="80"
+                    width="80"
+                    color="#ff8a1e"
+                    ariaLabel="loading"
+                />
+            </div>
+        );
+    }
 
     return (
         <div>
