@@ -5,13 +5,12 @@ import { TabContext } from '../TabContext';
 
 import Recomendacoes from './Recomendacoes';
 import SobreMin from './SobreMin';
-import MeusProjetos from './MeusProjetos';
 import GitHub from './GitHub';
 import Contacts from './Contacts';
 
 const tabs = [
-    { name: 'Minhas Recomendações', id: 'recomendacoes' },
     { name: 'Quem Sou', id: 'sobre' },
+    { name: 'Minhas Recomendações', id: 'recomendacoes' },
     { name: 'Github', id: 'github' },
     { name: 'Contatos', id: 'contatos' },
 ];
@@ -54,7 +53,7 @@ const OpMenu = () => {
 
     return (
         <div>
-            <div className="OpMenu">
+            <div className="OpMenu" id="opMenu">
                 {tabs.map((tab) => (
                     <TabButton
                         key={tab.id}

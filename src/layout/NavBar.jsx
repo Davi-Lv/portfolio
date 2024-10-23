@@ -38,7 +38,7 @@ export default function NavBar() {
                 </a>
             </div>
 
-            <Link ignoreCancelEvents spy={true} offset={-45} duration={1000} to="Contatos" smooth={true} onClick={handleContatosClick}>
+            <Link ignoreCancelEvents spy={true} offset={-45} duration={1000} to="opMenu" smooth={true} onClick={handleContatosClick}>
                 <button className='botaoContatos'>
                     Contatos
                 </button>

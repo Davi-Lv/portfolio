@@ -66,7 +66,6 @@ export default function App() {
             <p className='paragrafoQuemSou'>{data.personal_info.education}</p>
 
             <div className="botaobg">
-              <button className="saberMais"><span>sobre mim</span></button>
               <button className="saberMais" onClick={handleCopyClick}>
                 <img src={icon} alt="copy icon" />Copiar email
               </button>
