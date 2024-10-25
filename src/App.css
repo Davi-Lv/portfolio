@@ -44,6 +44,7 @@ body {
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.35s;
+  border: 1px solid #cecece;
 }
 
 .botaoContatos:hover {
@@ -106,6 +107,7 @@ body {
   background-color: #ffffff;
   border: none;
   color: #000000;
+  border: 1px solid #cecece;
   text-align: center;
   transition: all 0.5s;
   cursor: pointer;
