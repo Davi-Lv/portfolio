@@ -157,7 +157,7 @@
             "link": "https://www.credly.com/badges/4cfca1b7-6639-419a-a8e8-55ef06882c7b"
         },
         {
-            "image": "./src/assets/Cisco_logo.jpg",
+            "image": "./src/assets/cisco_logo.jpg",
             "course_name": "IoT Fundamentals",
             "company": "Cisco Networking Academy",
             "shipping_date": "04/2024",
@@ -171,7 +171,7 @@
             "link": "https://drive.google.com/file/d/1CO606YXZMaNWDCvgroWLxfTN3QwpYMJI/view?usp=sharing"
         },
         {
-            "image": "./src/assets/Cisco_logo.jpg",
+            "image": "./src/assets/cisco_logo.jpg",
             "course_name": "Cisco Certified CyberOps Associate",
             "company": "Cisco Networking Academy",
             "shipping_date": "08/2023",
@@ -206,7 +206,7 @@
             "link": "https://drive.google.com/file/d/1d0lxgVQra7c9YDlsbFN6FzYnzVWPm6HX/view?usp=sharing"
         },
         {
-            "image": "src/assets/Cisco_logo.jpg",
+            "image": "src/assets/cisco_logo.jpg",
             "course_name": "CCNAv7: Introdução às redes",
             "company": "Cisco Networking Academy",
             "shipping_date": "02/2022",
@@ -239,12 +239,12 @@
             "link": "https://www.instagram.com/davii_lv"
         },
         {
-            "image": "src/assets/Whatsapp.svg",
+            "image": "src/assets/WhatsApp.svg",
             "name": "whatsapp",
             "link": "https://api.whatsapp.com/send?phone=5581986438366"
         },
         {
-            "image": "./src/assets/Github.svg",
+            "image": "./src/assets/GitHub.svg",
             "name": "github",
             "link": "https://github.com/Davi-Lv"
         }
