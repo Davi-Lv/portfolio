@@ -1,6 +1,7 @@
 import '../styles/SobreMin.css';
 import { useEffect, useState, useCallback } from 'react';
 import { TailSpin } from 'react-loader-spinner';
+import data from '../services/data.json';
 
 const Curso = ({ curso, instituicao, periodo, imagemLink }) => (
     <a className="curso">
@@ -79,7 +80,7 @@ const Menu = ({ activeSection, handleMenuClick }) => (
 
 export default function SobreMin() {
     const [activeSection, setActiveSection] = useState('sobreMim');
-    const [data, setData] = useState(null);
+    const [dados, setDados] = useState(null);
 
     const handleMenuClick = useCallback((event, sectionId) => {
         event.preventDefault();
@@ -89,10 +90,7 @@ export default function SobreMin() {
     }, []);
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/services/data.json')
-            .then(response => response.json())
-            .then(data => setData(data))
-            .catch(error => console.error('Erro ao buscar dados:', error));
+        setDados(data);
     }, []);
 
     useEffect(() => {
@@ -120,7 +118,7 @@ export default function SobreMin() {
                 observer.unobserve(section);
             });
         };
-    }, [data]);
+    }, [dados]);
 
     if (!data) {
         return (
@@ -141,7 +139,6 @@ export default function SobreMin() {
                 <div id="sobreMim" className="aboutMe section">
                     <h2 className='AboutMeTitle'>Sobre mim</h2>
                     <div className="aboutMeContent">
-                        <h3 className="aboutMeTitulo">{data.personal_info.name}</h3>
                         <p className="aboutMeDescricao">{data.personal_info.about_me}</p>
                     </div>
                 </div>

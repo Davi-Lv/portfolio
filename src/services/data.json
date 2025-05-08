@@ -136,13 +136,13 @@
     ],
     "academic_history": [
         {
-            "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/CursoImageIFPE.svg",
+            "image": "src/assets/CursoImageIFPE.svg",
             "degree": "Ensino Superior - Análise e Desenvolvimento de Sistemas",
             "institution": "Instituto Federal de Pernambuco - Campus Jaboatão",
             "years": "2021-2024"
         },
         {
-            "image": "https://media.licdn.com/dms/image/v2/C4D0BAQFpnUpBdL7CXA/company-logo_100_100/company-logo_100_100/0/1630503558409?e=1737590400&v=beta&t=oHrn8WJXAw2_-f3uIvOiCrAsSGKbrUw_evw_dJgPltU",
+            "image": "src/assets/EnsinoMedioImageIFPE.jpg",
             "degree": "Ensino Médio",
             "institution": "Instituto Federal de Pernambuco - Campus Recife",
             "years": "Concluído em 2019"
@@ -150,63 +150,63 @@
     ],
     "certificates": [
         {
-            "image": "https://media.licdn.com/dms/image/v2/C560BAQER_QnUTXrPJw/company-logo_100_100/company-logo_100_100/0/1670264051233/amazon_web_services_logo?e=1737590400&v=beta&t=354bj7gCtJWOLFZV5oD5s_wx-RttZUA6QP1Rijp7cnU",
+            "image": "src/assets/AWS_Academy_Graduate_AWS_Academy_Cloud_Foundations.jpg",
             "course_name": "AWS Academy Graduate - AWS Academy Cloud Foundations",
             "company": "Amazon Web Services (AWS)",
             "shipping_date": "09/2024",
             "link": "https://www.credly.com/badges/4cfca1b7-6639-419a-a8e8-55ef06882c7b"
         },
         {
-            "image": "https://media.licdn.com/dms/image/v2/C4E0BAQFgocdTGHthDA/company-logo_100_100/company-logo_100_100/0/1630604808565/cisco_networking_academy1_logo?e=1737590400&v=beta&t=lxWHZWazU2eoaitcdoXZQkaEpAWeCmIORC34AELdTbs",
+            "image": "src/assets/Cisco_logo.jpg",
             "course_name": "IoT Fundamentals",
             "company": "Cisco Networking Academy",
             "shipping_date": "04/2024",
             "link": "https://www.linkedin.com/in/davi-mordonho-277948236/details/certifications/1675137693/multiple-media-viewer/?profileId=ACoAADrfR3sB_WwqewP9sW_OwzyFXQmdzoCZs8I&treasuryMediaId=1728253164082&type=DOCUMENT"
         },
         {
-            "image": "https://media.licdn.com/dms/image/v2/C4D0BAQFeOs6hsMwHWA/company-logo_100_100/company-logo_100_100/0/1630485476857/ifpe_jaboatao_logo?e=1737590400&v=beta&t=8iTWHryONBW_N98fOa3u2MiBpYvfiOExlInkDAC_dfI",
+            "image": "src/assets/ifpe_jaboatao_logo.jpg",
             "course_name": "Curso de Extensão Tecnológica - FACEPE",
             "company": "IFPE Campus Jaboatão",
             "shipping_date": "12/2023",
             "link": "https://drive.google.com/file/d/1CO606YXZMaNWDCvgroWLxfTN3QwpYMJI/view?usp=sharing"
         },
         {
-            "image": "https://media.licdn.com/dms/image/v2/C4E0BAQFgocdTGHthDA/company-logo_100_100/company-logo_100_100/0/1630604808565/cisco_networking_academy1_logo?e=1737590400&v=beta&t=lxWHZWazU2eoaitcdoXZQkaEpAWeCmIORC34AELdTbs",
+            "image": "src/assets/Cisco_logo.jpg",
             "course_name": "Cisco Certified CyberOps Associate",
             "company": "Cisco Networking Academy",
             "shipping_date": "08/2023",
             "link": "https://www.credly.com/badges/23e9cb01-0a62-44a8-baeb-d972501e8a13/public_url"
         },
         {
-            "image": "https://media.licdn.com/dms/image/v2/C4D0BAQF8OT9RjVFVBw/company-logo_100_100/company-logo_100_100/0/1656305893939/igti_logo?e=1737590400&v=beta&t=bKaxe7gwUgsJFD1k9HsfM4PSPR0fhC6VMpEFbsrT5tQ",
+            "image": "src/assets/igti_logo.jpg",
             "course_name": "Cientista de Dados",
             "company": "Instituto de Gestão e Tecnologia da Informação (IGTI) - XP Educação",
             "shipping_date": "05/2023",
             "link": "https://drive.google.com/file/d/1iblSXRQMILDfmIMCv_Br1w6hBqPM3YfN/view?usp=sharing"
         },
         {
-            "image": "https://media.licdn.com/dms/image/v2/C4D0BAQF8OT9RjVFVBw/company-logo_100_100/company-logo_100_100/0/1656305893939/igti_logo?e=1737590400&v=beta&t=bKaxe7gwUgsJFD1k9HsfM4PSPR0fhC6VMpEFbsrT5tQ",
+            "image": "src/assets/igti_logo.jpg",
             "course_name": "Desenvolvedor Mobile Multiplataforma",
             "company": "XP Educação",
             "shipping_date": "05/2023",
             "link": "https://drive.google.com/file/d/1GzwlZGrbKbc8kEntvJ64H2KHALkRWkD1/view?usp=sharing"
         },
         {
-            "image": "https://media.licdn.com/dms/image/v2/D4D0BAQEu0GhYNxdH6A/company-logo_100_100/company-logo_100_100/0/1726842819813/xpeducacao_logo?e=1737590400&v=beta&t=-nOlPGfPCy5j-rNs8iAO68wt7bznmAn4QwHqUFo66xo",
+            "image": "src/assets/igti_logo.jpg",
             "course_name": "Engenheiro de Dados",
             "company": "Instituto de Gestão e Tecnologia da Informação (IGTI) - XP Educação",
             "shipping_date": "05/2023",
             "link": "https://drive.google.com/file/d/1-T5A0NErSIr9krJMWDhv0qX2TMILKEUS/view?usp=sharing"
         },
         {
-            "image": "https://media.licdn.com/dms/image/v2/C4D0BAQFeOs6hsMwHWA/company-logo_100_100/company-logo_100_100/0/1630485476857/ifpe_jaboatao_logo?e=1737590400&v=beta&t=8iTWHryONBW_N98fOa3u2MiBpYvfiOExlInkDAC_dfI",
+            "image": "src/assets/ifpe_jaboatao_logo.jpg",
             "course_name": "Semana nacional de ciência e tecnologia (SNCT)",
             "company": "Instituto Federal de Pernambuco (IFPE) - Campus Jaboatão",
             "shipping_date": "10/2022",
             "link": "https://drive.google.com/file/d/1d0lxgVQra7c9YDlsbFN6FzYnzVWPm6HX/view?usp=sharing"
         },
         {
-            "image": "https://media.licdn.com/dms/image/v2/C4E0BAQFgocdTGHthDA/company-logo_100_100/company-logo_100_100/0/1630604808565/cisco_networking_academy1_logo?e=1737590400&v=beta&t=lxWHZWazU2eoaitcdoXZQkaEpAWeCmIORC34AELdTbs",
+            "image": "src/assets/Cisco_logo.jpg",
             "course_name": "CCNAv7: Introdução às redes",
             "company": "Cisco Networking Academy",
             "shipping_date": "02/2022",
@@ -215,13 +215,13 @@
     ],
     "voluntary_work": [
         {
-            "image": "https://media.licdn.com/dms/image/v2/C4D0BAQFeOs6hsMwHWA/company-logo_100_100/company-logo_100_100/0/1630485476857/ifpe_jaboatao_logo?e=1737590400&v=beta&t=8iTWHryONBW_N98fOa3u2MiBpYvfiOExlInkDAC_dfI",
+            "image": "src/assets/ifpe_jaboatao_logo.jpg",
             "role": "Palestrante e organizador da Semana nacional de ciência e tecnologia (SNCT)",
             "company": "Insituto Federal de Pernambuco (IFPE) - Campus Jaboatão",
             "years": "out de 2024"
         },
         {
-            "image": "https://media.licdn.com/dms/image/v2/C4E0BAQE4a89awI2nFQ/company-logo_100_100/company-logo_100_100/0/1630618527122/portodigital_logo?e=1737590400&v=beta&t=y1AugyvQWFtprmKCZPByQkNt1t49xhuTjlpaLpCF8nU",
+            "image": "src/assets/portodigital_logo.jpg",
             "role": "REC 'N' PLAY · Organizador de evento",
             "company": "Porto Digital",
             "years": "out de 2023"
@@ -229,22 +229,22 @@
     ],
     "contacts": [
         {
-            "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/Linkedin.svg",
+            "image": "src/assets/Linkedin.svg",
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/davi-mordonho-277948236"
         },
         {
-            "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/Instagram.svg",
+            "image": "src/assets/Instagram.svg",
             "name": "instagram",
             "link": "https://www.instagram.com/davii_lv"
         },
         {
-            "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/WhatsApp.svg",
+            "image": "src/assets/Whatsapp.svg",
             "name": "whatsapp",
             "link": "https://api.whatsapp.com/send?phone=5581986438366"
         },
         {
-            "image": "https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/assets/GitHub.svg",
+            "image": "src/assets/Github.svg",
             "name": "github",
             "link": "https://github.com/Davi-Lv"
         }

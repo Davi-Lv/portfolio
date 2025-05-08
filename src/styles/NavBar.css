@@ -37,15 +37,16 @@
 .botaoMenu:after {
   content: "";
   pointer-events: none;
-  bottom: -2px;
+  bottom: 0px;
   left: 50%;
   position: absolute;
   width: 0%;
-  height: 2px;
+  height: 3px;
   background-color: #fba720;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
+  border-radius: 5px;
 }
 
 .hamburger {
@@ -56,8 +57,18 @@
   border: none;
   margin: 10px 0;
   color: #1c1c1c;
+  position: relative;
+  z-index: 20;
+  transition: transform 0.3s ease;
 }
-
+.hamburger.active {
+  transform: rotate(
+    180deg
+  );
+}
+.hamburger:focus {
+  outline: none;
+}
 @media (max-width: 1228px) {
   .menu {
     padding: 0 1rem !important;
@@ -69,24 +80,37 @@
     display: flex;
     align-items: center;
   }
+
   .nav {
-    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(8px);
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.8
+    );
+    padding: 1rem;
+    border-top: 1px solid #eee;
+    display: flex;
     flex-direction: column;
-    width: 100%;
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    z-index: 10;
+    border-radius: 0 0 12px 12px;
   }
   .nav.active {
-    display: flex;
     opacity: 1;
-    max-height: 500px;
-    transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+    max-height: 300px;
+    margin: 1rem;
   }
   .buttomNav {
-    margin: 10px 0;
-    width: 100%;
     text-align: left;
   }
 }

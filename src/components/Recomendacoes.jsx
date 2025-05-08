@@ -3,6 +3,7 @@ import Book from '../assets/Book.svg';
 import Rating from '../assets/ratingIcon.svg';
 import React, { useEffect, useState } from 'react';
 import { TailSpin } from 'react-loader-spinner';
+import data from '../services/data.json';
 
 export default function Recomendacoes() {
     const [selectedRecommendation, setSelectedRecommendation] = useState("biblioteca");
@@ -12,16 +13,8 @@ export default function Recomendacoes() {
     const itemsPerPage = 3;
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/services/data.json')
-            .then(response => response.json())
-            .then(data => {
-                setRecommendations(data.recommendations);
-                setLoading(false);
-            })
-            .catch(error => {
-                console.error('Erro ao buscar dados:', error);
-                setLoading(false);
-            });
+        setRecommendations(data.recommendations);
+        setLoading(false);
     }, []);
 
     function handleSelectRecommendation(nome) {
@@ -114,24 +107,24 @@ export default function Recomendacoes() {
                 <CardOP
                     imgSrc={Book}
                     nome="Biblioteca"
-                    Subtitulo="Livros que me fizeram pensar fora da caixa."
-                    texto="Aprenda e evolua com essa leitura essencial!"
+                    Subtitulo="Livros que me fizeram pensar fora da caixa"
+                    texto="Preparado para evoluir?"
                     onClick={() => handleSelectRecommendation("biblioteca")}
                     isSelected={selectedRecommendation === "biblioteca"}
                 />
                 <CardOP
                     imgSrc={Book}
                     nome="Dicas de Presentes"
-                    Subtitulo="Sugestões de presentes incríveis."
-                    texto="Encontre o presente perfeito!"
+                    Subtitulo="Sugestões de presentes"
+                    texto="Deixe alguem feliz :)"
                     onClick={() => handleSelectRecommendation("dicas_de_presentes")}
                     isSelected={selectedRecommendation === "dicas_de_presentes"}
                 />
                 <CardOP
                     imgSrc={Book}
                     nome="Para Desenvolvedores"
-                    Subtitulo="Livros essenciais para desenvolvedores."
-                    texto="Melhore suas habilidades de programação!"
+                    Subtitulo="Livros que todo coder precisa conhecer"
+                    texto="Para melhorar as habilidades"
                     onClick={() => handleSelectRecommendation("para_desenvolvedor")}
                     isSelected={selectedRecommendation === "para_desenvolvedor"}
                 />

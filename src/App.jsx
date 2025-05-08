@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import PerfilImage from "../src/assets/perfilImage.svg";
 import NavBar from './layout/NavBar';
@@ -9,24 +9,14 @@ import Circle from "../src/assets/circle.svg";
 import OpMenu from './components/OpMenu';
 import { TailSpin } from 'react-loader-spinner';
 import { TabProvider } from './TabContext';
+import data from './services/data.json';
 
 export default function App() {
   const [icon, setIcon] = useState(Copy);
-  const [data, setData] = useState(null);
-  const [email, setEmail] = useState('');
-
-  useEffect(() => {
-    fetch('https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/services/data.json')
-      .then(response => response.json())
-      .then(data => {
-        setData(data);
-        const emailContact = data.contacts.find(contact => contact.name === "email");
-        if (emailContact) {
-          setEmail(emailContact.link);
-        }
-      })
-      .catch(error => console.error('Erro ao buscar dados:', error));
-  }, []);
+  const [email, setEmail] = useState(() => {
+    const emailContact = data.contacts.find(contact => contact.name === "email");
+    return emailContact ? emailContact.link : '';
+  });
 
   const handleCopyClick = () => {
     navigator.clipboard.writeText(email).then(() => {

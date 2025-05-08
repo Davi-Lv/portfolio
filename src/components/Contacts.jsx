@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/Contacts.css';
 import { TailSpin } from 'react-loader-spinner';
+import data from '../services/data.json';
 
 const Contato = ({ nome, link, imagemLink }) => (
     <a href={link} className="contato" target="_blank" rel="noopener noreferrer">
@@ -13,16 +14,8 @@ export default function Contacts() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/Davi-Lv/portfolio/refs/heads/main/src/services/data.json')
-            .then(response => response.json())
-            .then(data => {
-                setContacts(data.contacts);
-                setLoading(false);
-            })
-            .catch(error => {
-                console.error('Erro ao buscar dados:', error);
-                setLoading(false);
-            });
+        setContacts(data.contacts);
+        setLoading(false);
     }, []);
 
     if (loading) {
