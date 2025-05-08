@@ -136,13 +136,13 @@
     ],
     "academic_history": [
         {
-            "image": "./src/assets/CursoImageIFPE.svg",
+            "image": "/assets/CursoImageIFPE.svg",
             "degree": "Ensino Superior - Análise e Desenvolvimento de Sistemas",
             "institution": "Instituto Federal de Pernambuco - Campus Jaboatão",
             "years": "2021-2024"
         },
         {
-            "image": "./src/assets/EnsinoMedioImageIFPE.jpg",
+            "image": "/assets/EnsinoMedioImageIFPE.jpg",
             "degree": "Ensino Médio",
             "institution": "Instituto Federal de Pernambuco - Campus Recife",
             "years": "Concluído em 2019"
@@ -150,63 +150,63 @@
     ],
     "certificates": [
         {
-            "image": "./src/assets/AWS_Academy_Graduate_AWS_Academy_Cloud_Foundations.jpg",
+            "image": "/assets/AWS_Academy_Graduate_AWS_Academy_Cloud_Foundations.jpg",
             "course_name": "AWS Academy Graduate - AWS Academy Cloud Foundations",
             "company": "Amazon Web Services (AWS)",
             "shipping_date": "09/2024",
             "link": "https://www.credly.com/badges/4cfca1b7-6639-419a-a8e8-55ef06882c7b"
         },
         {
-            "image": "./src/assets/cisco_logo.jpg",
+            "image": "/assets/cisco_logo.jpg",
             "course_name": "IoT Fundamentals",
             "company": "Cisco Networking Academy",
             "shipping_date": "04/2024",
             "link": "https://www.linkedin.com/in/davi-mordonho-277948236/details/certifications/1675137693/multiple-media-viewer/?profileId=ACoAADrfR3sB_WwqewP9sW_OwzyFXQmdzoCZs8I&treasuryMediaId=1728253164082&type=DOCUMENT"
         },
         {
-            "image": "./src/assets/ifpe_jaboatao_logo.jpg",
+            "image": "/assets/ifpe_jaboatao_logo.jpg",
             "course_name": "Curso de Extensão Tecnológica - FACEPE",
             "company": "IFPE Campus Jaboatão",
             "shipping_date": "12/2023",
             "link": "https://drive.google.com/file/d/1CO606YXZMaNWDCvgroWLxfTN3QwpYMJI/view?usp=sharing"
         },
         {
-            "image": "./src/assets/cisco_logo.jpg",
+            "image": "/assets/cisco_logo.jpg",
             "course_name": "Cisco Certified CyberOps Associate",
             "company": "Cisco Networking Academy",
             "shipping_date": "08/2023",
             "link": "https://www.credly.com/badges/23e9cb01-0a62-44a8-baeb-d972501e8a13/public_url"
         },
         {
-            "image": "./src/assets/igti_logo.jpg",
+            "image": "/assets/igti_logo.jpg",
             "course_name": "Cientista de Dados",
             "company": "Instituto de Gestão e Tecnologia da Informação (IGTI) - XP Educação",
             "shipping_date": "05/2023",
             "link": "https://drive.google.com/file/d/1iblSXRQMILDfmIMCv_Br1w6hBqPM3YfN/view?usp=sharing"
         },
         {
-            "image": "./src/assets/igti_logo.jpg",
+            "image": "/assets/igti_logo.jpg",
             "course_name": "Desenvolvedor Mobile Multiplataforma",
             "company": "XP Educação",
             "shipping_date": "05/2023",
             "link": "https://drive.google.com/file/d/1GzwlZGrbKbc8kEntvJ64H2KHALkRWkD1/view?usp=sharing"
         },
         {
-            "image": "./src/assets/igti_logo.jpg",
+            "image": "/assets/igti_logo.jpg",
             "course_name": "Engenheiro de Dados",
             "company": "Instituto de Gestão e Tecnologia da Informação (IGTI) - XP Educação",
             "shipping_date": "05/2023",
             "link": "https://drive.google.com/file/d/1-T5A0NErSIr9krJMWDhv0qX2TMILKEUS/view?usp=sharing"
         },
         {
-            "image": "src/assets/ifpe_jaboatao_logo.jpg",
+            "image": "/assets/ifpe_jaboatao_logo.jpg",
             "course_name": "Semana nacional de ciência e tecnologia (SNCT)",
             "company": "Instituto Federal de Pernambuco (IFPE) - Campus Jaboatão",
             "shipping_date": "10/2022",
             "link": "https://drive.google.com/file/d/1d0lxgVQra7c9YDlsbFN6FzYnzVWPm6HX/view?usp=sharing"
         },
         {
-            "image": "src/assets/cisco_logo.jpg",
+            "image": "/assets/cisco_logo.jpg",
             "course_name": "CCNAv7: Introdução às redes",
             "company": "Cisco Networking Academy",
             "shipping_date": "02/2022",
@@ -215,13 +215,13 @@
     ],
     "voluntary_work": [
         {
-            "image": "src/assets/ifpe_jaboatao_logo.jpg",
+            "image": "/assets/ifpe_jaboatao_logo.jpg",
             "role": "Palestrante e organizador da Semana nacional de ciência e tecnologia (SNCT)",
             "company": "Insituto Federal de Pernambuco (IFPE) - Campus Jaboatão",
             "years": "out de 2024"
         },
         {
-            "image": "./src/assets/portodigital_logo.jpg",
+            "image": "/assets/portodigital_logo.jpg",
             "role": "REC 'N' PLAY · Organizador de evento",
             "company": "Porto Digital",
             "years": "out de 2023"
@@ -229,22 +229,22 @@
     ],
     "contacts": [
         {
-            "image": "src/assets/Linkedin.svg",
+            "image": "/assets/Linkedin.svg",
             "name": "linkedin",
             "link": "https://www.linkedin.com/in/davi-mordonho-277948236"
         },
         {
-            "image": "src/assets/Instagram.svg",
+            "image": "/assets/Instagram.svg",
             "name": "instagram",
             "link": "https://www.instagram.com/davii_lv"
         },
         {
-            "image": "src/assets/WhatsApp.svg",
+            "image": "/assets/WhatsApp.svg",
             "name": "whatsapp",
             "link": "https://api.whatsapp.com/send?phone=5581986438366"
         },
         {
-            "image": "./src/assets/GitHub.svg",
+            "image": "/assets/GitHub.svg",
             "name": "github",
             "link": "https://github.com/Davi-Lv"
         }
