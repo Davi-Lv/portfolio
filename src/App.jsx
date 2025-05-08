@@ -9,7 +9,7 @@ import Circle from "../src/assets/circle.svg";
 import OpMenu from './components/OpMenu';
 import { TailSpin } from 'react-loader-spinner';
 import { TabProvider } from './TabContext';
-import data from './services/data.json';
+import data from "./services/data.json";
 
 export default function App() {
   const [icon, setIcon] = useState(Copy);
